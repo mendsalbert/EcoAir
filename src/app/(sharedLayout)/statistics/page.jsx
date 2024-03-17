@@ -5,6 +5,7 @@ import Efficiency from "@/component/revenueFlow/Efficiency";
 import SummaryV2 from "@/component/summary/SummaryV2";
 import LocationV2 from "@/component/location";
 import TaskSummary from "@/component/summary/TaskSummary";
+import SummaryV3 from "@/component/summary/SummaryV3";
 
 function Statistics() {
   return (
@@ -16,6 +17,9 @@ function Statistics() {
         <div className="w-full mb-[24px] xl:flex xl:space-x-[24px]">
           <SummaryV2 />
           <Efficiency height="h-[180px]" />
+        </div>
+        <div className="w-full mb-[24px] xl:flex xl:space-x-[24px]">
+          <SummaryV3 />
         </div>
         {/* <div className="w-full mb-[24px] flex space-x-[24px]">
           <LocationV2 />
