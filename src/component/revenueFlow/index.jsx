@@ -272,9 +272,7 @@ function RevenueFlow() {
           </div>
         </div>
 
-        <DateFilter
-          options={["Jan 11 - Jan 16", "Jan 12 - Jan 16", "Jan 13 - Jan 16"]}
-        />
+        <DateFilter options={["Daily", "Weekly", "Monthly", "Yearly"]} />
       </div>
       <div className="w-full h-[255px]">
         <BarChart options={options} data={data} />
