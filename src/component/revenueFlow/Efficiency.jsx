@@ -55,12 +55,12 @@ function Efficiency({ width, height }) {
                     </svg>
                   </span>
                 </div>
-                <p className="text-base font-medium text-bgray-600">Arrival</p>
+                <p className="text-base font-medium text-bgray-600">Increase</p>
               </div>
               <div>
                 <div className="flex items-center space-x-[2px]">
                   <p className="text-lg font-bold text-bgray-900 dark:text-white">
-                    $6,230
+                    59%
                   </p>
                   <span>
                     <svg
@@ -86,7 +86,7 @@ function Efficiency({ width, height }) {
                   </span>
                 </div>
                 <p className="text-base font-medium text-bgray-600 dark:text-bgray-50">
-                  Spending
+                  Decrease
                 </p>
               </div>
             </div>
