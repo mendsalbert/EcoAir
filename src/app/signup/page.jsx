@@ -1,8 +1,8 @@
 import signupImg from "/public/static/images/illustration/signup.svg";
 import RightSide from "@/component/signin/RightSide";
 import SignUpForm from "@/component/forms/SignUpForm";
-import logoColor from "/public/static/images/logo/logo-color.svg";
-import logoWhite from "/public/static/images/logo/logo-white.svg";
+import logoColor from "/public/static/images/logo/logo-short.svg";
+import logoWhite from "/public/static/images/logo/logo-short-white.svg";
 import Link from "next/link";
 import Image from "next/image";
 
