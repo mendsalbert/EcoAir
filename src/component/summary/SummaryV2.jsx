@@ -93,6 +93,10 @@ function SummaryV2() {
             return `${value} `;
           },
         },
+        title: {
+          display: true,
+          text: "PM2.5/µg/m³",
+        },
       },
     },
 
