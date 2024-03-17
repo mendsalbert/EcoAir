@@ -181,7 +181,7 @@ function Sidebar({ handleActive }) {
                         </svg>
                       </span>
                       <span className="item-text text-lg font-medium leading-none">
-                        Integrations
+                        Model{" "}
                       </span>
                     </div>
                   </div>
