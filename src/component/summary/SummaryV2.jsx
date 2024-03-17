@@ -28,20 +28,7 @@ function SummaryV2() {
       chartRef.current.update();
     }
   }, []);
-  let month = [
-    "Jan",
-    "Feb",
-    "Mar",
-    "April",
-    "May",
-    "Jun",
-    "July",
-    "Aug",
-    "Sep",
-    "Oct",
-    "Nov",
-    "Dec",
-  ];
+  let month = ["2020", "2021", "2022", "2023", "2024"];
 
   const plugins = [
     {
