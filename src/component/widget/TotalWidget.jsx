@@ -9,7 +9,7 @@ function TotalWidget() {
         <TotalWidgetCard
           totalEarnImg={totalEarn}
           memberImg={memberImg}
-          title="Air Quality Index (AQI) Summary"
+          title="Current AQI"
           amount="7,245.00"
           groth="+ 3.5%"
           id="totalEarn"
@@ -17,7 +17,7 @@ function TotalWidget() {
         <TotalWidgetCard
           totalEarnImg={totalEarn}
           memberImg={memberImg}
-          title="Total Spending"
+          title="Top Pollutants"
           amount="7,245.00"
           groth="+ 3.5%"
           id="totalSpending"
@@ -25,7 +25,7 @@ function TotalWidget() {
         <TotalWidgetCard
           totalEarnImg={totalEarn}
           memberImg={memberImg}
-          title="Spending Goal"
+          title="Major Pollution Sources"
           amount="7,245.00"
           groth="+ 3.5%"
           id="totalGoal"
