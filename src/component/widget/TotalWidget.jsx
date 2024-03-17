@@ -1,4 +1,4 @@
-import totalEarn1 from "/public/static/images/icons/total-earn.svg";
+import totalEarn1 from "/public/static/images/icons/total-earn-1.svg";
 import totalEarn2 from "/public/static/images/icons/total-earn-2.svg";
 import totalEarn3 from "/public/static/images/icons/total-earn-3.svg";
 import totalEarn4 from "/public/static/images/icons/total-earn-4.svg";
