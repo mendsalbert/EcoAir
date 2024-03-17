@@ -280,7 +280,7 @@ function Sidebar({ handleActive }) {
         </div>
 
         <div className="copy-write-text">
-          <p className="text-sm text-[#969BA0]">© 2023 All Rights Reserved</p>
+          <p className="text-sm text-[#969BA0]">© 2024 All Rights Reserved</p>
           <p className="text-sm font-medium text-bgray-700">
             Made with ❤️ by
             <a
