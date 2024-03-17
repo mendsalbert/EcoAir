@@ -144,6 +144,17 @@ function SummaryV2() {
             "relativehumidity",
           ]}
         />
+        <DateFilter
+          options={[
+            "PM2.5",
+            "PM10",
+            "NO₂",
+            "CO",
+            "so2",
+            "pressure",
+            "relativehumidity",
+          ]}
+        />
       </div>
       <div className="w-full h-[255px]">
         {/* <canvas id="revenueFlowLine" height="255"></canvas> */}
