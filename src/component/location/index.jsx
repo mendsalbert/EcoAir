@@ -8,7 +8,7 @@ const Map = dynamic(() => import("../chart/Map"), {
 
 function LocationV2() {
   return (
-    <div className="xl:w-66 w-full rounded-lg bg-white dark:bg-darkblack-600 p-6">
+    <div className="w-full rounded-lg bg-white dark:bg-darkblack-600 p-6">
       <div className="flex justify-between items-center mb-4">
         <h3 className="text-bgray-900 dark:text-white sm:text-2xl text-xl font-bold">
           Most locations
