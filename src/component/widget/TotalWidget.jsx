@@ -18,7 +18,7 @@ function TotalWidget() {
           totalEarnImg={totalEarn}
           memberImg={memberImg}
           title="Air Sensors"
-          amount="210.00"
+          amount="410"
           groth=""
           id="totalEarn"
         />
