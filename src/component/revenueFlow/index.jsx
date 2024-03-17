@@ -25,8 +25,7 @@ function RevenueFlow() {
   let dataSetsLight = [
     {
       label: "My First Dataset",
-      // data: [1, 5, 2, 2, 6, 7, 8, 7, 3, 4, 1, 3],
-      data: [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
+      data: [1, 5, 2, 2, 6, 7, 8, 7, 3, 4, 1, 3],
       backgroundColor: [
         "rgba(237, 242, 247, 1)",
         "rgba(237, 242, 247, 1)",
