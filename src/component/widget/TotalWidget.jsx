@@ -19,7 +19,7 @@ function TotalWidget() {
           memberImg={memberImg}
           title="Top Pollutants/PM2.5"
           amount="15 µg/m³"
-          groth="+ 3.5%"
+          groth="Ghana"
           id="totalSpending"
         />
         <TotalWidgetCard
