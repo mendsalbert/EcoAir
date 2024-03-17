@@ -65,7 +65,7 @@ function SummaryV2() {
       x: {
         title: {
           display: true,
-          text: "Year",
+          text: "Years",
         },
         ticks: {
           color: theme === "" ? "black" : "white",
