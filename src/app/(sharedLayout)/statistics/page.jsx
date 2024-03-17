@@ -9,8 +9,8 @@ import TaskSummary from "@/component/summary/TaskSummary";
 function Statistics() {
   return (
     <>
+      <LocationV2 />
       <section className="2xl:flex-1 2xl:mb-0 mb-6">
-        <LocationV2 />
         <div className="w-full mb-[24px]  "></div>
         <div className="w-full mb-[24px] xl:flex xl:space-x-[24px]">
           <SummaryV2 />
