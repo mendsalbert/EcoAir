@@ -92,7 +92,7 @@ function LocationV2() {
           </div>
         </div> */}
         <div className=" w-full flex justify-center">
-          <div className="xl:w-full md:w-[350px] w-[300px]">
+          <div className="xl:w-full md:w-[350px] w-full">
             <Map />
           </div>
         </div>
