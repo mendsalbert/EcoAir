@@ -12,7 +12,14 @@ const createGradient = (ctx) => {
   return gradient;
 };
 
-function TotalWidgetCard({ title, amount, groth, memberImg, totalEarnImg }) {
+function TotalWidgetCard({
+  title,
+  amount,
+  groth,
+  memberImg,
+  totalEarnImg,
+  graphColor,
+}) {
   const chartRef = useRef(null);
 
   useEffect(() => {
@@ -89,10 +96,10 @@ function TotalWidgetCard({ title, amount, groth, memberImg, totalEarnImg }) {
       {
         data: [0, 10, 0, 65, 0, 25, 0, 35, 20, 100, 40, 75, 50, 85, 60],
         label: "Visitor",
-        borderColor: "#22C55E",
+        borderColor: graphColor,
         pointRadius: 0,
         pointBackgroundColor: "#fff",
-        pointBorderColor: "#22C55E",
+        pointBorderColor: graphColorp,
         borderWidth: 1,
         fill: true,
         fillColor: "#fff",
