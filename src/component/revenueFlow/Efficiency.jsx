@@ -27,7 +27,7 @@ function Efficiency({ width, height }) {
                 style={{ left: "calc(50% - 17px)", top: "calc(50% - 17px)" }}
               ></div>
             </div>
-            <div className="counting">
+            {/* <div className="counting">
               <div className="mb-6">
                 <div className="flex items-center space-x-[2px]">
                   <p className="text-lg font-bold text-success-300">$5,230</p>
@@ -89,7 +89,7 @@ function Efficiency({ width, height }) {
                   Spending
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="status">
             <div className="mb-1.5 flex items-center justify-between">
