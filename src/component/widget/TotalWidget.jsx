@@ -10,7 +10,7 @@ function TotalWidget() {
           totalEarnImg={totalEarn}
           memberImg={memberImg}
           title="Current AQI"
-          amount="7,245.00"
+          amount="250.00"
           groth="+ 3.5%"
           id="totalEarn"
         />
