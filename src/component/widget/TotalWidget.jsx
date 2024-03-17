@@ -17,6 +17,7 @@ function TotalWidget() {
           amount="210.00"
           groth="+ 3.5%"
           id="totalEarn"
+          graphColor="22C55E"
         />
         <TotalWidgetCard
           totalEarnImg={totalEarn2}
