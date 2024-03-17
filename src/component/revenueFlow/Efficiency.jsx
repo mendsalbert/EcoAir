@@ -30,7 +30,7 @@ function Efficiency({ width, height }) {
             <div className="counting">
               <div className="mb-6">
                 <div className="flex items-center space-x-[2px]">
-                  <p className="text-lg font-bold text-success-300">$5,230</p>
+                  <p className="text-lg font-bold text-success-300">$60</p>
                   <span>
                     <svg
                       width="14"
