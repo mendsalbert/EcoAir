@@ -10,9 +10,8 @@ function Statistics() {
   return (
     <>
       <section className="2xl:flex-1 2xl:mb-0 mb-6">
-        <div className="w-full mb-[24px]  ">
-          <LocationV2 />
-        </div>
+        <LocationV2 />
+        <div className="w-full mb-[24px]  "></div>
         <div className="w-full mb-[24px] xl:flex xl:space-x-[24px]">
           <SummaryV2 />
           <Efficiency height="h-[180px]" />
