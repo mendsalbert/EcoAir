@@ -10,7 +10,7 @@ function Efficiency({ width, height }) {
           <h3 className="text-xl font-bold text-bgray-900 dark:text-white">
             Leading Pollutants
           </h3>
-          {/* <MonthFilter options={["January", "February", "March"]} /> */}
+          <MonthFilter options={["January", "February", "March"]} />
         </div>
         <div className="px-[20px] py-[12px]">
           <div className="mb-4 flex items-center space-x-8">
