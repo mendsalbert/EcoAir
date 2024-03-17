@@ -21,6 +21,14 @@ function TotalWidget() {
           amount="410"
           groth=""
           id="totalEarn"
+        />{" "}
+        <TotalWidgetCard
+          totalEarnImg={totalEarn}
+          memberImg={memberImg}
+          title="Air Sensors"
+          amount="410"
+          groth=""
+          id="totalEarn"
         />
         <TotalWidgetCard
           totalEarnImg={totalEarn}
