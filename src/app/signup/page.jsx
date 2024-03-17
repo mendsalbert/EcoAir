@@ -9,7 +9,7 @@ import Image from "next/image";
 function SignUp() {
   return (
     <section className="bg-white dark:bg-darkblack-500">
-      <div className="flex flex-col lg:flex-row justify-between min-h-screen">
+      <div className="flex flex-col lg:flex-row justify-center min-h-screen">
         {/* Left */}
         <div className="lg:w-1/2 px-5 xl:pl-12 pt-10">
           <header>
