@@ -224,7 +224,7 @@ function RevenueFlow() {
             </span>
           </div>
           <div className="flex items-center space-x-2">
-            <div className="h-3 w-3 rounded-full bg-orange"></div>
+            <div className="h-3 w-3 rounded-full bg-purple"></div>
             <span className="text-sm font-medium text-bgray-700 dark:text-bgray-50">
               CO
             </span>
