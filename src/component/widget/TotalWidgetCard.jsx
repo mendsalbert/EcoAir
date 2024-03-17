@@ -105,7 +105,7 @@ function TotalWidgetCard({ title, amount, groth, memberImg, totalEarnImg }) {
       <div className="mb-5 flex items-center justify-between">
         <div className="flex items-center space-x-[7px]">
           <div className="icon">
-            <span>
+            {/* <span>
               <Image
                 priority={true}
                 height={totalEarnImg.height}
@@ -113,7 +113,7 @@ function TotalWidgetCard({ title, amount, groth, memberImg, totalEarnImg }) {
                 src={totalEarnImg.src}
                 alt="icon"
               />
-            </span>
+            </span> */}
           </div>
           <span className="text-lg font-semibold text-bgray-900 dark:text-white">
             {title}
