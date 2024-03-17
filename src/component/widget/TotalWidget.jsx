@@ -1,4 +1,4 @@
-import totalEarn from "/public/static/images/icons/total-earn-2.svg";
+import totalEarn from "/public/static/images/icons/total-earn-1.svg";
 import memberImg from "/public/static/images/avatar/members-2.png";
 import TotalWidgetCard from "./TotalWidgetCard";
 
