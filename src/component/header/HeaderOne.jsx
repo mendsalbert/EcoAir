@@ -136,8 +136,6 @@ function HeaderOne({ handleSidebar }) {
             active={popup.notification}
             handlePopup={handlePopup}
           />
-          <MassagePopup active={popup.massage} handlePopup={handlePopup} />
-          <StorePopUp active={popup.store} handlePopup={handlePopup} />
           <ProfilePopup active={popup.profile} handlePopup={handlePopup} />
         </div>
       </div>
