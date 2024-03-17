@@ -134,7 +134,15 @@ function SummaryV2() {
           </div> */}
         </div>
         <DateFilter
-          options={["Jan 11 - Jan 16", "Jan 12 - Jan 16", "Jan 13 - Jan 16"]}
+          options={[
+            "PM2.5",
+            "PM10",
+            "NO₂",
+            "CO",
+            "so2",
+            "pressure",
+            "relativehumidity",
+          ]}
         />
       </div>
       <div className="w-full h-[255px]">
