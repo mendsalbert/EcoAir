@@ -17,7 +17,7 @@ function TotalWidget() {
           amount="210.00"
           groth="+ 3.5%"
           id="totalEarn"
-          graphColor="22C55E"
+          graphColor="#22C55E"
         />
         <TotalWidgetCard
           totalEarnImg={totalEarn2}
@@ -26,6 +26,7 @@ function TotalWidget() {
           amount="410"
           groth=""
           id="totalEarn"
+          graphColor="#22C55E"
         />{" "}
         <TotalWidgetCard
           totalEarnImg={totalEarn3}
@@ -34,6 +35,7 @@ function TotalWidget() {
           amount="117"
           groth=""
           id="totalEarn"
+          graphColor="#22C55E"
         />
         <TotalWidgetCard
           totalEarnImg={totalEarn4}
@@ -42,6 +44,7 @@ function TotalWidget() {
           amount="15 µg/m³"
           groth="Ghana"
           id="totalSpending"
+          graphColor="#22C55E"
         />
         <TotalWidgetCard
           totalEarnImg={totalEarn5}
@@ -50,6 +53,7 @@ function TotalWidget() {
           amount="25,000"
           groth="+ 10% reduction "
           id="totalGoal"
+          graphColor="#22C55E"
         />
       </div>
     </div>
