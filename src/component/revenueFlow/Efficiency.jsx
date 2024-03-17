@@ -118,7 +118,7 @@ function Efficiency({ width, height }) {
               <div className="flex items-center space-x-3">
                 <div className="h-2.5 w-2.5 rounded-full bg-bgray-200"></div>
                 <span className="text-sm font-medium text-bgray-600 dark:text-white">
-                  Others
+                  NO₂
                 </span>
               </div>
               <p className="text-sm font-bold text-bgray-900 dark:text-bgray-50">
