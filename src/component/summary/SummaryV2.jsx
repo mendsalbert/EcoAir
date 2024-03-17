@@ -61,7 +61,14 @@ function SummaryV2() {
         label: "Dataset 1", // Name of the first dataset
         data: [65, 59, 80, 81, 56, 55, 40], // Data for the first dataset
         borderColor: "#ff6384", // Color for the first dataset
-        backgroundColor: "rgba(255, 99, 132, 0.2)", // Color with lower opacity for the area under the line (if needed)
+        backgroundColor: "rgba(255, 99, 132, 0.2)",
+
+        pointBorderWidth: 4,
+        borderWidth: 2,
+        fill: true,
+        fillColor: "#fff",
+        tension: 0.4,
+        // Color with lower opacity for the area under the line (if needed)
         // ...other properties
       },
       {
