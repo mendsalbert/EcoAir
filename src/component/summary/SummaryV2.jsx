@@ -61,7 +61,7 @@ function SummaryV2() {
         label: "Dataset 1",
         data: [65, 59, 80, 81, 56, 55, 40],
         borderColor: "#ff6384",
-        backgroundColor: "rgba(255, 99, 132, 0.2)",
+        backgroundColor: "rgb(250,204,20)",
 
         pointBorderWidth: 4,
         borderWidth: 2,
