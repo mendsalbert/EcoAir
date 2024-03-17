@@ -15,7 +15,7 @@ function SignUp() {
           <div className="max-w-[460px] m-auto pt-24 pb-16">
             <header className="text-center mb-8">
               <h2 className="text-bgray-900 dark:text-white text-4xl font-semibold font-poppins mb-2">
-                Sign up for an account
+                Onboard and get Update on Air quanlity
               </h2>
               <p className="font-urbanis text-base font-medium text-bgray-600 dark:text-darkblack-300">
                 Send, spend and save smarter
