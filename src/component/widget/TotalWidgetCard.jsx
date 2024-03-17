@@ -96,9 +96,9 @@ function TotalWidgetCard({
       {
         data: [0, 10, 0, 65, 0, 25, 0, 35, 20, 100, 40, 75, 50, 85, 60],
         label: "Visitor",
-        borderColor: "#22C55E",
+        borderColor: "#926DFF",
         pointRadius: 0,
-        pointBackgroundColor: "#fff",
+        pointBackgroundColor: "#926DFF",
         pointBorderColor: graphColor,
         borderWidth: 1,
         fill: true,
