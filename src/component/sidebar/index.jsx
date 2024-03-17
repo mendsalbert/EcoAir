@@ -144,20 +144,6 @@ function Sidebar({ handleActive }) {
             </ul>
           </div>
         </div>
-
-        <div className="copy-write-text">
-          <p className="text-sm text-[#969BA0]">© 2023 All Rights Reserved</p>
-          <p className="text-sm font-medium text-bgray-700">
-            Made with ❤️ by
-            <a
-              href="#"
-              target="_blank"
-              className="border-b font-semibold hover:text-blue-600"
-            >
-              QuomodoTheme
-            </a>
-          </p>
-        </div>
       </div>
     </aside>
   );
