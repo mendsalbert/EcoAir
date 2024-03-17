@@ -51,7 +51,7 @@ function Map() {
         zoomMin: 1,
         zoomAnimate: true,
         showTooltip: true,
-        zoomStep: 0.1,
+        zoomStep: 0,
         bindTouchEvents: true,
         regionStyle: {
           // Region style
