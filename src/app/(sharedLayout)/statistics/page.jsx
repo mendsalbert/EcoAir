@@ -12,6 +12,7 @@ function Statistics() {
       <section className="2xl:flex-1 2xl:mb-0 mb-6">
         <div className="w-full mb-[24px] flex ">
           <LocationV2 />
+          <TaskSummary />
         </div>
         <div className="w-full mb-[24px] xl:flex xl:space-x-[24px]">
           <SummaryV2 />
