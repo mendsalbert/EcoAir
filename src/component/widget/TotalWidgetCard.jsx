@@ -102,7 +102,7 @@ function TotalWidgetCard({
         pointBorderColor: graphColor,
         borderWidth: 1,
         fill: true,
-        fillColor: "#fff",
+        fillColor: "926DFF",
         tension: 0.4,
       },
     ],
