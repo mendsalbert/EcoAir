@@ -135,7 +135,7 @@ function TotalWidgetCard({ title, amount, groth, memberImg, totalEarnImg }) {
             {amount}
           </p>
           <div className="flex items-center space-x-1">
-            <span>
+            {/* <span>
               <svg
                 width="16"
                 height="14"
@@ -153,7 +153,7 @@ function TotalWidgetCard({ title, amount, groth, memberImg, totalEarnImg }) {
                   fill="#22C55E"
                 />
               </svg>
-            </span>
+            </span> */}
             <span className="text-sm font-medium text-success-300">
               {groth}
             </span>
