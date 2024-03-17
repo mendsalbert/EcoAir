@@ -26,7 +26,7 @@ function TotalWidget() {
           totalEarnImg={totalEarn}
           memberImg={memberImg}
           title="Emissions Tracking(CO2)"
-          amount="25,000.00"
+          amount="25,000"
           groth="+ 10% reduction "
           id="totalGoal"
         />
