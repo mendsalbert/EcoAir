@@ -144,7 +144,7 @@ function SignUp() {
           </div>
         </div>
         {/*  Right  */}
-        <RightSide img={signupImg} />ß
+        {/* <RightSide img={signupImg} />ß */}
       </div>
     </section>
   );
