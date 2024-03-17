@@ -144,61 +144,7 @@ function Sidebar({ handleActive }) {
             </ul>
           </div>
         </div>
-        <div className="upgrade-wrapper mb-[26px] h-[172px] w-full pr-[24px]">
-          <div
-            className="upgrade-banner relative h-full w-full rounded-lg"
-            style={{ backgroundImage: `url(${bg})` }}
-          >
-            <h1 className="mb-2 pt-8 text-center text-xl font-bold text-white">
-              Unlimited Cashback
-            </h1>
-            <p className="mb-2 px-7 text-center text-sm leading-5 text-white opacity-[0.5]">
-              Instant 2% back on all your spend to your account.
-            </p>
-            <div className="flex justify-center">
-              <a href="#">
-                <div className="flex h-[36px] w-[134px] justify-center rounded-lg bg-success-300 transition duration-300 ease-in-out hover:bg-success-400">
-                  <div className="flex items-center space-x-1.5">
-                    <span className="text-sm font-semibold text-white">
-                      Upgrade Now
-                    </span>
-                    <span>
-                      <svg
-                        width="12"
-                        height="8"
-                        viewBox="0 0 12 8"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M1.33301 4H10.6663"
-                          stroke="white"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M8 6.66667L10.6667 4"
-                          stroke="white"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M8 1.33325L10.6667 3.99992"
-                          stroke="white"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    </span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
+
         <div className="copy-write-text">
           <p className="text-sm text-[#969BA0]">© 2023 All Rights Reserved</p>
           <p className="text-sm font-medium text-bgray-700">
