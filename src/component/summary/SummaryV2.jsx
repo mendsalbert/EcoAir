@@ -46,7 +46,6 @@ function SummaryV2() {
     labels: month,
     datasets: [
       {
-        label: "Signed",
         data: [65, 75, 65, 55, 75, 55, 45, 65, 75, 65, 85, 75],
         borderColor: "#22C55E",
         pointBorderColor: "#ffffff",
