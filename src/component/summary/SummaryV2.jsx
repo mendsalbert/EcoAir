@@ -124,7 +124,7 @@ function SummaryV2() {
           <div className="flex space-x-2 items-center">
             <div className="w-3 h-3 bg-success-300 rounded-full"></div>
             <span className="text-bgray-700 dark:text-bgray-50 text-sm font-medium">
-              Signed
+              Graph
             </span>
           </div>
           {/* <div className="flex space-x-2 items-center">
