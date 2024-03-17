@@ -118,52 +118,6 @@ function Sidebar({ handleActive }) {
                     </span>
                   </div>
                 </a>
-                <ul
-                  className={`sub-menu ml-2.5 mt-[22px] border-l border-success-100 pl-5 ${
-                    activeDashboard && "active"
-                  }`}
-                >
-                  <li>
-                    <Link
-                      href="/"
-                      className="text-md inline-block py-1.5 font-medium text-bgray-600 transition-all hover:text-bgray-800 dark:text-bgray-50 hover:dark:text-success-300"
-                    >
-                      Dashboard Default
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/home-2"
-                      className="text-md inline-block py-1.5 font-medium text-bgray-600 transition-all hover:text-bgray-800 dark:text-bgray-50 hover:dark:text-success-300"
-                    >
-                      Dashboard Two
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/statistics"
-                      className="text-md inline-block py-1.5 font-medium text-bgray-600 transition-all hover:text-bgray-800 dark:text-bgray-50 hover:dark:text-success-300"
-                    >
-                      Dashboard Three
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/analytics"
-                      className="text-md inline-block py-1.5 font-medium text-bgray-600 transition-all hover:text-bgray-800 dark:text-bgray-50 hover:dark:text-success-300"
-                    >
-                      Dashboard Four
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/home-five"
-                      className="text-md inline-block py-1.5 font-medium text-bgray-600 transition-all hover:text-bgray-800 dark:text-bgray-50 hover:dark:text-success-300"
-                    >
-                      Dashboard Five
-                    </Link>
-                  </li>
-                </ul>
               </li>
               <li className="item py-[11px] text-bgray-900 dark:text-white">
                 <Link href="/transaction">
