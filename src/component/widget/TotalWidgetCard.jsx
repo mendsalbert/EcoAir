@@ -120,13 +120,13 @@ function TotalWidgetCard({ title, amount, groth, memberImg, totalEarnImg }) {
           </span>
         </div>
         <div>
-          {/* <Image
+          <Image
             priority={true}
             height={memberImg.height}
             width={memberImg.width}
             src={memberImg.src}
             alt="members"
-          /> */}
+          />
         </div>
       </div>
       <div className="flex items-end justify-between">
