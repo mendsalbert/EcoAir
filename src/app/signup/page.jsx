@@ -9,26 +9,6 @@ import Image from "next/image";
 function SignUp() {
   return (
     <section className="bg-white dark:bg-darkblack-500">
-      <header className="ml-2 mt-2">
-        <Link href="/" className="">
-          <Image
-            priority={true}
-            height={logoColor.height}
-            width={logoColor.width}
-            src={logoColor.src}
-            className="block dark:hidden"
-            alt="Logo"
-          />
-          <Image
-            priority={true}
-            height={logoWhite.height}
-            width={logoWhite.width}
-            src={logoWhite.src}
-            className="hidden dark:block"
-            alt="Logo"
-          />
-        </Link>
-      </header>
       <div className="flex flex-col lg:flex-row justify-center min-h-screen">
         {/* Left */}
         <div className="lg:w-1/2 px-5 xl:pl-12 pt-10">
