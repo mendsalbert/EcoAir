@@ -1,8 +1,8 @@
 "use client";
 import ProtoTypes from "prop-types";
 import bg from "/public/static/images/bg/upgrade-bg.png";
-import logo from "/public/static/images/logo/logo-color.svg";
-import logoW from "/public/static/images/logo/logo-white.svg";
+import logo from "/public/static/images/logo/logo-short.svg";
+import logoW from "/public/static/images/logo/logo-short-white.svg";
 import profileImg from "/public/static/images/avatar/profile-xs.png";
 import Link from "next/link";
 import { useState } from "react";
@@ -144,7 +144,7 @@ function Sidebar({ handleActive }) {
                       href="/statistics"
                       className="text-md inline-block py-1.5 font-medium text-bgray-600 transition-all hover:text-bgray-800 dark:text-bgray-50 hover:dark:text-success-300"
                     >
-                     Dashboard Three
+                      Dashboard Three
                     </Link>
                   </li>
                   <li>
@@ -152,7 +152,7 @@ function Sidebar({ handleActive }) {
                       href="/analytics"
                       className="text-md inline-block py-1.5 font-medium text-bgray-600 transition-all hover:text-bgray-800 dark:text-bgray-50 hover:dark:text-success-300"
                     >
-                     Dashboard Four
+                      Dashboard Four
                     </Link>
                   </li>
                   <li>
