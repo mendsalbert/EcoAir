@@ -83,7 +83,28 @@ function RevenueFlow() {
       borderWidth: 0,
       borderRadius: 5,
     },
+    {
+      label: "My First Dataset 3",
+      data: [2, 5, 3, 2, 5, 6, 9, 7, 3, 4, 1, 3],
+      backgroundColor: [
+        "rgba(237, 242, 247, 1)",
+        "rgba(237, 242, 247, 1)",
+        "rgba(237, 242, 247, 1)",
+        "rgba(237, 242, 247, 1)",
+        "rgba(237, 242, 247, 1)",
+        "rgba(74, 222, 128, 1)",
+        "rgba(237, 242, 247, 1)",
+        "rgba(237, 242, 247, 1)",
+        "rgba(237, 242, 247, 1)",
+        "rgba(237, 242, 247, 1)",
+        "rgba(237, 242, 247, 1)",
+        "rgba(237, 242, 247, 1)",
+      ],
+      borderWidth: 0,
+      borderRadius: 5,
+    },
   ];
+
   let dataSetsDark = [
     {
       label: "My First Dataset",
