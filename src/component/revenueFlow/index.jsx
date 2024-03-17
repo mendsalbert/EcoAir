@@ -202,7 +202,7 @@ function RevenueFlow() {
     <div className="flex w-full flex-col justify-between rounded-lg bg-white px-[24px] py-3 dark:bg-darkblack-600 xl:w-66">
       <div className="mb-2 flex items-center justify-between border-b border-bgray-300 pb-2 dark:border-darkblack-400">
         <h3 className="text-xl font-bold text-bgray-900 dark:text-white sm:text-2xl">
-          Revenue Flow
+          Trend Analysis Section
         </h3>
         <div className="hidden items-center space-x-[28px] sm:flex">
           <div className="flex items-center space-x-2">
