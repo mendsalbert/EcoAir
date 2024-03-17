@@ -19,7 +19,7 @@ function MonthFilter({ options }) {
         className="flex items-center space-x-1"
       >
         <span className="text-base font-semibold text-bgray-900 dark:text-white">
-          {activeFilter ? options[activeFilter] : "Monthly"}
+          {activeFilter ? options[activeFilter] : "Year"}
         </span>
         <span>
           <svg
