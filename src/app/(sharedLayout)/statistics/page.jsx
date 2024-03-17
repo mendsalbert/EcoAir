@@ -17,10 +17,10 @@ function Statistics() {
           <SummaryV2 />
           <Efficiency height="h-[180px]" />
         </div>
-        <div className="w-full mb-[24px] flex space-x-[24px]">
+        {/* <div className="w-full mb-[24px] flex space-x-[24px]">
           <LocationV2 />
           <TaskSummary />
-        </div>
+        </div> */}
 
         <ListTab />
       </section>
