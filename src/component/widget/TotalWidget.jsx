@@ -18,7 +18,7 @@ function TotalWidget() {
           totalEarnImg={totalEarn}
           memberImg={memberImg}
           title="Top Pollutants"
-          amount="7,245.00"
+          amount="15 µg/m³"
           groth="+ 3.5%"
           id="totalSpending"
         />
