@@ -208,19 +208,25 @@ function RevenueFlow() {
           <div className="flex items-center space-x-2">
             <div className="h-3 w-3 rounded-full bg-warning-300"></div>
             <span className="text-sm font-medium text-bgray-700 dark:text-bgray-50">
-              Pending
+              PM2.5
             </span>
           </div>
           <div className="flex items-center space-x-2">
             <div className="h-3 w-3 rounded-full bg-success-300"></div>
             <span className="text-sm font-medium text-bgray-700 dark:text-bgray-50">
-              Signed
+              PM10
             </span>
           </div>
           <div className="flex items-center space-x-2">
             <div className="h-3 w-3 rounded-full bg-orange"></div>
             <span className="text-sm font-medium text-bgray-700 dark:text-bgray-50">
-              Lost
+              NO₂
+            </span>
+          </div>
+          <div className="flex items-center space-x-2">
+            <div className="h-3 w-3 rounded-full bg-orange"></div>
+            <span className="text-sm font-medium text-bgray-700 dark:text-bgray-50">
+              CO
             </span>
           </div>
         </div>
