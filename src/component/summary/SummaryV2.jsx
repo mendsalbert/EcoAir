@@ -190,7 +190,7 @@ function SummaryV2() {
 
         <DateFilter
           options={[
-            "PM2.5",
+            "Daily",
             "PM10",
             "NO₂",
             "CO",
