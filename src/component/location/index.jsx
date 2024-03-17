@@ -16,7 +16,7 @@ function LocationV2() {
         <LocationSelector />
       </div>
       <div className="xl:flex xl:space-x-[26px] items-center">
-        <div className="xl:flex-1 w-full mb-4 xl:mb-0">
+        {/* <div className="xl:flex-1 w-full mb-4 xl:mb-0">
           <div className="flex space-x-2 items-end mb-1">
             <h1 className="text-2xl dark:text-white font-bold leading-[30px] text-bgray-900">
               76,345
@@ -90,7 +90,7 @@ function LocationV2() {
               <span className="text-bgray-600 text-sm font-medium">15,732</span>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="xl:w-[412px] w-full flex justify-center">
           <div className="xl:w-full md:w-[350px] w-[300px]">
             <Map />
