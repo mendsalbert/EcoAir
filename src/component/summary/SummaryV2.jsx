@@ -57,6 +57,19 @@ function SummaryV2() {
         tension: 0.4,
       },
     ],
+    datasets: [
+      {
+        data: [65, 75, 65, 55, 75, 55, 45, 65, 75, 65, 85, 75],
+        borderColor: "#22C55E",
+        pointBorderColor: "#ffffff",
+        pointBackgroundColor: "#22C55E",
+        pointBorderWidth: 4,
+        borderWidth: 2,
+        fill: true,
+        fillColor: "#fff",
+        tension: 0.4,
+      },
+    ],
   };
   const options = {
     maintainAspectRatio: false,
