@@ -9,7 +9,7 @@ function TotalWidget() {
         <TotalWidgetCard
           totalEarnImg={totalEarn}
           memberImg={memberImg}
-          title="Total earnings"
+          title="Air Quality Index (AQI) Summary"
           amount="7,245.00"
           groth="+ 3.5%"
           id="totalEarn"
