@@ -63,6 +63,10 @@ function SummaryV2() {
     responsive: true,
     scales: {
       x: {
+        title: {
+          display: true,
+          text: "Year",
+        },
         ticks: {
           color: theme === "" ? "black" : "white",
         },
