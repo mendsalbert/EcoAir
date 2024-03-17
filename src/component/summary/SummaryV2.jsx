@@ -58,9 +58,9 @@ function SummaryV2() {
         tension: 0.4,
       },
       {
-        label: "Dataset 1", // Name of the first dataset
-        data: [65, 59, 80, 81, 56, 55, 40], // Data for the first dataset
-        borderColor: "#ff6384", // Color for the first dataset
+        label: "Dataset 1",
+        data: [65, 59, 80, 81, 56, 55, 40],
+        borderColor: "#ff6384",
         backgroundColor: "rgba(255, 99, 132, 0.2)",
 
         pointBorderWidth: 4,
@@ -68,15 +68,17 @@ function SummaryV2() {
         fill: true,
         fillColor: "#fff",
         tension: 0.4,
-        // Color with lower opacity for the area under the line (if needed)
-        // ...other properties
       },
       {
-        label: "Dataset 2", // Name of the second dataset
-        data: [28, 48, 40, 19, 86, 27, 90], // Data for the second dataset
-        borderColor: "#36a2eb", // Color for the second dataset
-        backgroundColor: "rgba(54, 162, 235, 0.2)", // Color with lower opacity for the area under the line (if needed)
-        // ...other properties
+        label: "Dataset 2",
+        data: [28, 48, 40, 19, 86, 27, 90],
+        borderColor: "#36a2eb",
+        backgroundColor: "rgba(54, 162, 235, 0.2)",
+        pointBorderWidth: 4,
+        borderWidth: 2,
+        fill: true,
+        fillColor: "#fff",
+        tension: 0.4,
       },
     ],
   };
