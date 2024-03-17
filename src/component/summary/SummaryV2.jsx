@@ -152,12 +152,6 @@ function SummaryV2() {
           Ghana
         </h3>
         <div className="sm:flex hidden space-x-[28px] items-center">
-          <div className="flex space-x-2 items-center">
-            <div className="w-3 h-3 bg-success-300 rounded-full"></div>
-            <span className="text-bgray-700 dark:text-bgray-50 text-sm font-medium">
-              Graph
-            </span>
-          </div>
           {/* <div className="flex space-x-2 items-center">
             <div className="w-3 h-3 bg-orange rounded-full"></div>
             <span className="text-bgray-700 dark:text-bgray-50 text-sm font-medium">
