@@ -26,7 +26,7 @@ function TotalWidget() {
           amount="410"
           groth=""
           id="totalEarn"
-          graphColor="#22C55E"
+          graphColor="#926DFF"
         />{" "}
         <TotalWidgetCard
           totalEarnImg={totalEarn3}
