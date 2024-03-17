@@ -25,8 +25,8 @@ function TotalWidget() {
         <TotalWidgetCard
           totalEarnImg={totalEarn}
           memberImg={memberImg}
-          title="Emissions Tracking"
-          amount="7,245.00"
+          title="Emissions Tracking(CO2)"
+          amount="25,000.00"
           groth="+ 10% reduction "
           id="totalGoal"
         />
