@@ -288,7 +288,7 @@ function Sidebar({ handleActive }) {
               target="_blank"
               className="border-b font-semibold hover:text-blue-600"
             >
-              QuomodoTheme
+              Albert Mends
             </a>
           </p>
         </div>
