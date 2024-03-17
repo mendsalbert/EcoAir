@@ -9,7 +9,7 @@ import Image from "next/image";
 function SignUp() {
   return (
     <section className="bg-white dark:bg-darkblack-500">
-      <header className="m-4">
+      <header className="">
         <Link href="/" className="">
           <Image
             priority={true}
