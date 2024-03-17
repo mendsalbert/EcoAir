@@ -1,4 +1,8 @@
-import totalEarn from "/public/static/images/icons/total-earn-1.svg";
+import totalEarn1 from "/public/static/images/icons/total-earn-1.svg";
+import totalEarn2 from "/public/static/images/icons/total-earn-2.svg";
+import totalEarn3 from "/public/static/images/icons/total-earn-3.svg";
+import totalEarn4 from "/public/static/images/icons/total-earn-4.svg";
+import totalEarn5 from "/public/static/images/icons/total-earn-5.svg";
 import memberImg from "/public/static/images/avatar/members-2.png";
 import TotalWidgetCard from "./TotalWidgetCard";
 
@@ -7,7 +11,7 @@ function TotalWidget() {
     <div className="mb-[24px] w-full">
       <div className="grid grid-cols-1 gap-[24px] lg:grid-cols-3">
         <TotalWidgetCard
-          totalEarnImg={totalEarn}
+          totalEarnImg={totalEarn1}
           memberImg={memberImg}
           title="Current AQI"
           amount="210.00"
@@ -15,7 +19,7 @@ function TotalWidget() {
           id="totalEarn"
         />
         <TotalWidgetCard
-          totalEarnImg={totalEarn}
+          totalEarnImg={totalEarn2}
           memberImg={memberImg}
           title="Air Sensors"
           amount="410"
@@ -23,7 +27,7 @@ function TotalWidget() {
           id="totalEarn"
         />{" "}
         <TotalWidgetCard
-          totalEarnImg={totalEarn}
+          totalEarnImg={totalEarn3}
           memberImg={memberImg}
           title="Coutries"
           amount="117"
@@ -31,7 +35,7 @@ function TotalWidget() {
           id="totalEarn"
         />
         <TotalWidgetCard
-          totalEarnImg={totalEarn}
+          totalEarnImg={totalEarn4}
           memberImg={memberImg}
           title="Top Pollutants/PM2.5"
           amount="15 µg/m³"
@@ -39,7 +43,7 @@ function TotalWidget() {
           id="totalSpending"
         />
         <TotalWidgetCard
-          totalEarnImg={totalEarn}
+          totalEarnImg={totalEarn5}
           memberImg={memberImg}
           title="Emissions Tracking(CO2)"
           amount="25,000"
