@@ -188,17 +188,7 @@ function SummaryV2() {
           ]}
         />
 
-        <DateFilter
-          options={[
-            "Daily",
-            "PM10",
-            "NO₂",
-            "CO",
-            "so2",
-            "pressure",
-            "relativehumidity",
-          ]}
-        />
+        <DateFilter options={["Year", "Monthly", "Weekly", "Hourly"]} />
         <DateFilter
           options={[
             "PM2.5",
