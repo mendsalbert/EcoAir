@@ -99,23 +99,6 @@ function Sidebar({ handleActive }) {
                         Dashboards
                       </span>
                     </div>
-                    <span>
-                      <svg
-                        width="6"
-                        height="12"
-                        viewBox="0 0 6 12"
-                        fill="none"
-                        className="fill-current"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                          fill="currentColor"
-                          d="M0.531506 0.414376C0.20806 0.673133 0.155619 1.1451 0.414376 1.46855L4.03956 6.00003L0.414376 10.5315C0.155618 10.855 0.208059 11.3269 0.531506 11.5857C0.854952 11.8444 1.32692 11.792 1.58568 11.4685L5.58568 6.46855C5.80481 6.19464 5.80481 5.80542 5.58568 5.53151L1.58568 0.531506C1.32692 0.20806 0.854953 0.155619 0.531506 0.414376Z"
-                        />
-                      </svg>
-                    </span>
                   </div>
                 </a>
               </li>
