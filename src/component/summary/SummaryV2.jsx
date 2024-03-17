@@ -102,7 +102,7 @@ function SummaryV2() {
         text: "Visitor: 2k",
       },
       tooltip: {
-        enabled: false,
+        enabled: true,
       },
     },
     elements: {
