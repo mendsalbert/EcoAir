@@ -203,7 +203,6 @@ function SummaryV2() {
           option={options}
           refer={chartRef}
         />
-
         {/* <Histogram data={data_} options={options} /> */}
       </div>
     </div>
