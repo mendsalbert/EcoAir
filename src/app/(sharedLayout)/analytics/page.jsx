@@ -4,6 +4,7 @@ import EfficiencyV2 from "@/component/revenueFlow/EfficiencyV2";
 import SummaryV3 from "@/component/summary/SummaryV3";
 import SummaryV2 from "@/component/summary/SummaryV2";
 import LocationV2 from "@/component/location";
+import Efficiency from "@/component/revenueFlow/Efficiency";
 
 function Analytics() {
   return (
