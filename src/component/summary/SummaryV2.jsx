@@ -5,6 +5,7 @@ import DateFilter from "../forms/DateFilter";
 import { useRef } from "react";
 import { useEffect } from "react";
 import { ThemeContext } from "@/app/layout";
+import Histogram from "../chart/Histogram";
 
 const createGradient = (ctx) => {
   const gradient = ctx.createLinearGradient(0, 0, 0, 450);
@@ -144,6 +145,16 @@ function SummaryV2() {
       },
     },
   };
+  const data_ = {
+    labels: ["0-5", "5-10", "10-15", "15-20"], // Replace these with your actual bin ranges
+    datasets: [
+      {
+        data: [5, 10, 15, 20], // Replace these with your actual frequency counts
+        backgroundColor: "rgba(0, 123, 255, 0.5)",
+        // ...other dataset properties
+      },
+    ],
+  };
 
   return (
     <div className="xl:w-66 w-full bg-white dark:bg-darkblack-600 flex flex-col justify-between rounded-lg px-6 py-3">
@@ -186,12 +197,14 @@ function SummaryV2() {
       </div>
       <div className="w-full h-[255px]">
         {/* <canvas id="revenueFlowLine" height="255"></canvas> */}
-        <LineChart
+        {/* <LineChart
           plugins={plugins}
           dataSet={data}
           option={options}
           refer={chartRef}
-        />
+        /> */}
+
+        <Histogram data={data_} />
       </div>
     </div>
   );
