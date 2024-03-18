@@ -8,6 +8,7 @@ import {
   Legend,
   Filler,
 } from "chart.js";
+import { Bar } from "react-chartjs-2";
 
 ChartJS.register(
   CategoryScale,
