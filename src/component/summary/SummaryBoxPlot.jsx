@@ -43,26 +43,37 @@ function SummaryBoxPlot() {
       },
     },
   ];
+
+  const min1 = 10,
+    Q1_1 = 20,
+    median1 = 30,
+    Q3_1 = 40,
+    max1 = 50;
+  const min2 = 15,
+    Q1_2 = 25,
+    median2 = 35,
+    Q3_2 = 45,
+    max2 = 55;
+  const min3 = 20,
+    Q1_3 = 30,
+    median3 = 40,
+    Q3_3 = 50,
+    max3 = 60;
+
   const data = {
-    labels: ["Category 1", "Category 2", "Category 3"], // Replace these with your actual categories
+    labels: ["Category 1", "Category 2", "Category 3"],
     datasets: [
       {
         label: "Box Plot",
         data: [
-          [min1, Q1_1, median1, Q3_1, max1], // Data for Category 1
-          [min2, Q1_2, median2, Q3_2, max2], // Data for Category 2
-          [min3, Q1_3, median3, Q3_3, max3], // Data for Category 3
-          // ...more categories
+          [Q1_1, median1, median1, Q3_1, max1], // Floating bar for Q1 to Q3, median as a point
+          [Q1_2, median2, median2, Q3_2, max2],
+          [Q1_3, median3, median3, Q3_3, max3],
         ],
         // Configuration for how the box plot looks
         backgroundColor: "rgba(0, 123, 255, 0.5)",
         borderColor: "rgba(0, 123, 255, 1)",
         borderWidth: 1,
-        // Specify how to interpret the floating bars
-        parsing: {
-          yAxisKey: "range",
-        },
-        // ...other dataset properties
       },
     ],
   };
@@ -144,7 +155,7 @@ function SummaryBoxPlot() {
           option={options}
           refer={chartRef}
         /> */}
-        <Histogram data={data_} options={options} />
+        <Histogram data={data} options={options} />
       </div>
     </div>
   );
