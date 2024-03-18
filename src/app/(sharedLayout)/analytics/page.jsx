@@ -7,6 +7,7 @@ import LocationV2 from "@/component/location";
 import Efficiency from "@/component/revenueFlow/Efficiency";
 
 function Analytics() {
+  return (
     <>
       <section className="2xl:flex-1 2xl:mb-0 mb-6">
         <div className="w-full mb-[24px]  ">
