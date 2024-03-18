@@ -204,7 +204,7 @@ function SummaryV2() {
           refer={chartRef}
         /> */}
 
-        <Histogram data={data_} />
+        <Histogram data={data_} options={options} />
       </div>
     </div>
   );
