@@ -14,7 +14,7 @@ const createGradient = (ctx) => {
   return gradient;
 };
 
-function SummaryV2() {
+function SummaryBoxPlot() {
   const { theme } = useContext(ThemeContext);
   const chartRef = useRef(null);
 
@@ -150,4 +150,4 @@ function SummaryV2() {
   );
 }
 
-export default SummaryV2;
+export default SummaryBoxPlot;
