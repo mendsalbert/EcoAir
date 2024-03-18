@@ -196,7 +196,7 @@ function SummaryV2() {
         <DateFilter options={["Year", "Monthly", "Weekly", "Hourly"]} />
       </div>
       <div className="w-full h-[255px]">
-        {/* <canvas id="revenueFlowLine" height="255"></canvas> */}
+        <canvas id="revenueFlowLine" height="255"></canvas>
         <LineChart
           plugins={plugins}
           dataSet={data}
