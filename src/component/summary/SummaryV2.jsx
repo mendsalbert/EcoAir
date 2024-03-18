@@ -149,7 +149,7 @@ function SummaryV2() {
     labels: ["0-5", "5-10", "10-15", "15-20"], // Replace these with your actual bin ranges
     datasets: [
       {
-        data: [5, 10, 15, 20], // Replace these with your actual frequency counts
+        data: [5, 10, 15, 20, 5, 7], // Replace these with your actual frequency counts
         backgroundColor: "rgba(0, 123, 255, 0.5)",
         // ...other dataset properties
       },
