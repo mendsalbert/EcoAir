@@ -5,6 +5,7 @@ import SummaryV3 from "@/component/summary/SummaryV3";
 import SummaryV2 from "@/component/summary/SummaryV2";
 import LocationV2 from "@/component/location";
 import Efficiency from "@/component/revenueFlow/Efficiency";
+import SummaryHis from "@/component/summary/SummaryHis";
 
 function Analytics() {
   return (
@@ -14,7 +15,7 @@ function Analytics() {
           <LocationV2 />
         </div>
         <div className="w-full mb-[24px] xl:flex xl:space-x-[24px]">
-          <SummaryV2 />
+          <SummaryHis />
           <Efficiency height="h-[180px]" />
         </div>
         <div className="w-full mb-[24px] xl:flex xl:space-x-[24px]">
