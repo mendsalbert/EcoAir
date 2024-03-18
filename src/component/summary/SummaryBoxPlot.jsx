@@ -6,6 +6,7 @@ import { useRef } from "react";
 import { useEffect } from "react";
 import { ThemeContext } from "@/app/layout";
 import Histogram from "../chart/Histogram";
+import BoxPlot from "../chart/BoxPlot";
 
 const createGradient = (ctx) => {
   const gradient = ctx.createLinearGradient(0, 0, 0, 450);
@@ -155,7 +156,8 @@ function SummaryBoxPlot() {
           option={options}
           refer={chartRef}
         /> */}
-        <Histogram data={data} options={options} />
+        {/* <Histogram data={data} options={options} /> */}
+        <BoxPlot />
       </div>
     </div>
   );
