@@ -197,14 +197,14 @@ function SummaryV2() {
       </div>
       <div className="w-full h-[255px]">
         {/* <canvas id="revenueFlowLine" height="255"></canvas> */}
-        {/* <LineChart
+        <LineChart
           plugins={plugins}
           dataSet={data}
           option={options}
           refer={chartRef}
-        /> */}
+        />
 
-        <Histogram data={data_} options={options} />
+        {/* <Histogram data={data_} options={options} /> */}
       </div>
     </div>
   );
