@@ -22,7 +22,7 @@ function Sidebar({ handleActive }) {
             className="block dark:hidden"
             alt="logo"
           />
-          <p>EcoAir</p>
+          <p className="font-bold">EcoAir</p>
           <Image
             priority={true}
             height={logoW.height}
