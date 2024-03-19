@@ -59,9 +59,8 @@ function NotificationPopup({ active, handlePopup }) {
                     </strong>
                     air quality is currently around
                     <strong className="text-bgray-900 dark:text-white">
-                      SEO writing
+                      402/😂
                     </strong>
-                    totaling
                     <span className="text-success-300">$199.00</span>
                   </p>
                   <span className="text-xs font-medium text-bgray-500">
