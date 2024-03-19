@@ -195,7 +195,6 @@ function UserTab({ pageSize }) {
                 </span>
               </div>
             </td>
-            <td className="px-6 py-5 xl:px-0"></td>
           </tr>
           {users?.map((user, index) =>
             pageSize
