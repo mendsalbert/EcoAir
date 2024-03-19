@@ -93,7 +93,7 @@ function SummaryV3() {
         ticks: {
           color: theme === "" ? "black" : "white",
           callback(value) {
-            return `${value}K `;
+            return `${value} `;
           },
         },
       },
