@@ -108,6 +108,7 @@ const authors = [
     id: 1,
     importance: "gold",
     img: author,
+    overall: "43",
   },
   {
     name: "Ajoy Sarker",
