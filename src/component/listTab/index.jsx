@@ -10,7 +10,6 @@ function ListTab({ pageSize }) {
       <div className="flex flex-col space-y-5">
         <div className="flex h-[56px] w-full space-x-4">
           <Search />
-          <Filter options={["January", "February", "March"]} />
         </div>
         <FilterFull />
         <UserTab pageSize={pageSize} />
