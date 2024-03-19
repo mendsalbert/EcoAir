@@ -57,7 +57,7 @@ function NotificationPopup({ active, handlePopup }) {
                     <strong className="text-bgray-900 dark:text-white">
                       Ghana{" "}
                     </strong>
-                    air quality has droped
+                    air quality is currently around
                     <strong className="text-bgray-900 dark:text-white">
                       SEO writing
                     </strong>
