@@ -127,7 +127,7 @@ function SummaryV3() {
     },
     elements: {
       point: {
-        radius: [0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0],
+        radius: 3, // This sets a default radius for all points
         hoverRadius: 6,
       },
     },
