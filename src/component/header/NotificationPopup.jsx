@@ -151,34 +151,6 @@ function NotificationPopup({ active, handlePopup }) {
               </Link>
             </li>
           </ul>
-          <div className="absolute bottom-0 left-0 flex h-[75px] w-full items-center justify-between px-8">
-            <div>
-              <Link href="#">
-                <div className="flex items-center space-x-2">
-                  <span>
-                    <svg
-                      width="22"
-                      height="12"
-                      viewBox="0 0 22 12"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6 6L11 11L21 1M1 6L6 11M11 6L16 1"
-                        stroke="#0CAF60"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </span>
-                  <span className="text-sm font-semibold text-success-300">
-                    Mark all as read
-                  </span>
-                </div>
-              </Link>
-            </div>
-          </div>
         </div>
       </div>
     </div>
