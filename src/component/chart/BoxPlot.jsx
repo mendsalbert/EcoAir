@@ -2,18 +2,40 @@ import React from "react";
 import Plot from "react-plotly.js";
 
 function BoxPlot() {
+  // This example assumes you have 5 time periods with data for each.
+  // Replace these arrays with your actual data.
+  const timePeriods = ["2020", "2021", "2022", "2023", "2024"];
+  const data = timePeriods.map((year, i) => ({
+    y: [
+      /* Your data for this year */
+    ],
+    type: "box",
+    name: year,
+    boxpoints: "all",
+    jitter: 0.5,
+    whiskerwidth: 0.2,
+    fillcolor: "cls",
+    marker: {
+      size: 2,
+    },
+    line: {
+      width: 1,
+    },
+  }));
+
   return (
     <Plot
-      data={[
-        {
-          type: "box",
-          y: [1, 2, 3, 4, 5], // replace with your y data array
-          boxpoints: "all", // display the original data points
-          jitter: 0.3, // add some jitter to the data points to avoid overlap
-          pointpos: -1.8, // offset the data points from the box
+      data={data}
+      layout={{
+        title: "Time Series Box Plot",
+        xaxis: {
+          title: "Year",
         },
-      ]}
-      layout={{ width: 700, height: 400, title: "Box Plot" }}
+        yaxis: {
+          title: "Data Value",
+          autorange: true,
+        },
+      }}
     />
   );
 }
