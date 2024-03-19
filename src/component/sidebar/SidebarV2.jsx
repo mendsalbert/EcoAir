@@ -110,63 +110,7 @@ function SidebarV2() {
                       </span>
                     </Link>
                   </li>
-                  <li className="item px-[43px] py-[11px]">
-                    <Link href="/my-wallet">
-                      <span className="item-ico">
-                        <svg
-                          width="20"
-                          height="18"
-                          viewBox="0 0 20 18"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M20 4C20 1.79086 18.2091 0 16 0H4C1.79086 0 0 1.79086 0 4V14C0 16.2091 1.79086 18 4 18H16C18.2091 18 20 16.2091 20 14V4Z"
-                            fill="#1A202C"
-                            className="path-1"
-                          />
-                          <path
-                            d="M6 9C6 7.34315 4.65685 6 3 6H0V12H3C4.65685 12 6 10.6569 6 9Z"
-                            fill="#22C55E"
-                            className="path-2"
-                          />
-                        </svg>
-                      </span>
-                    </Link>
-                  </li>
-                  <li className="item px-[43px] py-[11px]">
-                    <Link href="/messages">
-                      <span className="item-ico">
-                        <svg
-                          width="16"
-                          height="18"
-                          viewBox="0 0 16 18"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M8 18C9.38503 18 10.5633 17.1652 11 16H5C5.43668 17.1652 6.61497 18 8 18Z"
-                            fill="#22C55E"
-                            className="path-2"
-                          />
-                          <path
-                            fillRule="evenodd"
-                            clipRule="evenodd"
-                            d="M9.6896 0.754028C9.27403 0.291157 8.67102 0 8 0C6.74634 0 5.73005 1.01629 5.73005 2.26995V2.37366C3.58766 3.10719 2.0016 4.85063 1.76046 6.97519L1.31328 10.9153C1.23274 11.6249 0.933441 12.3016 0.447786 12.8721C-0.649243 14.1609 0.394434 16 2.22281 16H13.7772C15.6056 16 16.6492 14.1609 15.5522 12.8721C15.0666 12.3016 14.7673 11.6249 14.6867 10.9153L14.2395 6.97519C14.2333 6.92024 14.2262 6.86556 14.2181 6.81113C13.8341 6.93379 13.4248 7 13 7C10.7909 7 9 5.20914 9 3C9 2.16744 9.25436 1.3943 9.6896 0.754028Z"
-                            fill="#1A202C"
-                            className="path-1"
-                          />
-                          <circle
-                            cx="13"
-                            cy="3"
-                            r="3"
-                            fill="#22C55E"
-                            className="path-2"
-                          />
-                        </svg>
-                      </span>
-                    </Link>
-                  </li>
+
                   <li className="item px-[43px] py-[11px]">
                     <Link href="/integrations">
                       <span className="item-ico">
