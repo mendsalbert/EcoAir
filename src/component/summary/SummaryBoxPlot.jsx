@@ -16,7 +16,7 @@ const createGradient = (ctx) => {
   return gradient;
 };
 
-function SummaryBoxPlot() {
+function SummaryHeatMap() {
   const { theme } = useContext(ThemeContext);
   const chartRef = useRef(null);
 
@@ -111,7 +111,7 @@ function SummaryBoxPlot() {
   };
 
   return (
-    <div className="xl:w-66 w-full bg-white dark:bg-darkblack-600 flex flex-col justify-between rounded-lg px-6 py-3">
+    <div className=" w-full bg-white dark:bg-darkblack-600 flex flex-col justify-between rounded-lg px-6 py-3">
       <div className="flex justify-between items-center pb-2 mb-2 border-b border-bgray-300">
         <h3 className="text-bgray-900 dark:text-white sm:text-2xl text-xl font-bold">
           Global
@@ -164,4 +164,4 @@ function SummaryBoxPlot() {
   );
 }
 
-export default SummaryBoxPlot;
+export default SummaryHeatMap;
