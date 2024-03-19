@@ -149,7 +149,7 @@ function SummaryBoxPlot() {
 
         <DateFilter options={["Year", "Monthly", "Weekly", "Hourly"]} />
       </div>
-      <div className="w-full h-[255px]">
+      <div className="w-full ">
         {/* <canvas id="revenueFlowLine" height="255"></canvas> */}
         {/* <LineChart
           plugins={plugins}
