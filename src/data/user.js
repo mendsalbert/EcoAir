@@ -29,6 +29,7 @@ const user = [
     email: "devon@mail.com",
     location: "Philadelphia, USA",
     spent: "101.00",
+    overall: "43",
   },
   {
     id: 3,
@@ -37,6 +38,7 @@ const user = [
     email: "devon@mail.com",
     location: "Philadelphia, USA",
     spent: "101.00",
+    overall: "43",
   },
   {
     id: 4,
@@ -45,6 +47,7 @@ const user = [
     email: "devon@mail.com",
     location: "Philadelphia, USA",
     spent: "101.00",
+    overall: "43",
   },
   {
     id: 5,
@@ -53,6 +56,7 @@ const user = [
     email: "devon@mail.com",
     location: "Philadelphia, USA",
     spent: "101.00",
+    overall: "43",
   },
   {
     id: 6,
@@ -61,6 +65,7 @@ const user = [
     email: "devon@mail.com",
     location: "Philadelphia, USA",
     spent: "101.00",
+    overall: "43",
   },
   {
     id: 7,
@@ -69,6 +74,7 @@ const user = [
     email: "devon@mail.com",
     location: "Philadelphia, USA",
     spent: "101.00",
+    overall: "43",
   },
   {
     id: 8,
@@ -77,6 +83,7 @@ const user = [
     email: "devon@mail.com",
     location: "Philadelphia, USA",
     spent: "101.00",
+    overall: "43",
   },
   {
     id: 9,
@@ -85,6 +92,7 @@ const user = [
     email: "devon@mail.com",
     location: "Philadelphia, USA",
     spent: "101.00",
+    overall: "43",
   },
 ];
 
