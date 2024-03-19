@@ -147,7 +147,7 @@ function TotalWidgetCard({
               {groth}
             </span>
             <span className="text-sm font-medium text-bgray-700 dark:text-bgray-50">
-              {isPrev && "from last week"}
+              {isPrev ? "from last week" : ""}
             </span>
           </div>
         </div>
