@@ -251,6 +251,7 @@ function UserTab({ pageSize }) {
                     email={user.email}
                     location={user.location}
                     spent={user.spent}
+                    overall={user.overall}
                   />
                 )
               : index < 3 && (
