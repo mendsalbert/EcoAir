@@ -89,14 +89,7 @@ function SidebarV2() {
                           Analytics
                         </Link>
                       </li>
-                      <li>
-                        <Link
-                          href="/messages"
-                          className="text-md inline-block py-1.5 font-medium text-bgray-600 hover:text-bgray-800"
-                        >
-                          Inbox
-                        </Link>
-                      </li>
+
                       <li>
                         <Link
                           href="/integrations"
