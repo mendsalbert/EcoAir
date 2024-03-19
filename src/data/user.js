@@ -121,6 +121,7 @@ const authors = [
     id: 2,
     importance: "silver",
     img: author1,
+    overall: "43",
   },
   {
     name: "Mohammad Ali",
@@ -133,6 +134,7 @@ const authors = [
     id: 3,
     importance: "silver",
     img: author2,
+    overall: "43",
   },
   {
     name: "Nayeem Islam",
@@ -145,6 +147,7 @@ const authors = [
     id: 4,
     importance: "silver",
     img: author3,
+    overall: "43",
   },
   {
     name: "Abdullah Mamun",
@@ -157,6 +160,7 @@ const authors = [
     id: 5,
     importance: "silver",
     img: author4,
+    overall: "43",
   },
   {
     name: "Sheikh Rakib",
@@ -169,6 +173,7 @@ const authors = [
     id: 6,
     importance: "silver",
     img: author5,
+    overall: "43",
   },
   {
     name: "Michal Hamer",
@@ -181,6 +186,7 @@ const authors = [
     id: 7,
     importance: "silver",
     img: author6,
+    overall: "43",
   },
 ];
 export { authors };
