@@ -88,7 +88,7 @@ function HeaderOne({ handleSidebar }) {
             </div>
             <div className="hidden h-[48px] w-[1px] bg-bgray-300 dark:bg-darkblack-400 xl:block"></div>
             {/* author */}
-            <Author showProfile={handlePopup} />
+            {/* <Author showProfile={handlePopup} /> */}
           </div>
           {/* notification ,message, store */}
           <NotificationPopup
