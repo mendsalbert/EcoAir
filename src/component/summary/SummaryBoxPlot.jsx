@@ -6,7 +6,8 @@ import { useRef } from "react";
 import { useEffect } from "react";
 import { ThemeContext } from "@/app/layout";
 import Histogram from "../chart/Histogram";
-import BoxPlot from "../chart/BoxPlot";
+import BoxPlot from "../chart/CorrelationHeatmap.jsx";
+import CorrelationHeatmap from "../chart/CorrelationHeatmap.jsx";
 
 const createGradient = (ctx) => {
   const gradient = ctx.createLinearGradient(0, 0, 0, 450);
@@ -157,7 +158,7 @@ function SummaryBoxPlot() {
           refer={chartRef}
         /> */}
         {/* <Histogram data={data} options={options} /> */}
-        <BoxPlot />
+        <CorrelationHeatmap />
       </div>
     </div>
   );
