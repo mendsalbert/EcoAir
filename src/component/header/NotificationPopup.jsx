@@ -58,10 +58,8 @@ function NotificationPopup({ active, handlePopup }) {
                       Ghana{" "}
                     </strong>
                     air quality is currently around{" "}
-                    <strong className="text-bgray-900 dark:text-white">
-                      402/😂{" "}
-                    </strong>
-                    <span className="text-success-300">$199.00</span>
+                    <strong className="text-bgray-900 dark:text-white"></strong>
+                    <span className="text-success-300"> 402/😂 </span>
                   </p>
                   <span className="text-xs font-medium text-bgray-500">
                     23 mins ago
