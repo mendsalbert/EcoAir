@@ -151,7 +151,7 @@ function SummaryV3() {
           <div className="flex space-x-2 items-center">
             <div className="w-3 h-3 bg-success-300 rounded-full"></div>
             <span className="text-bgray-700 dark:text-white text-sm font-medium">
-              Signed
+              Trend
             </span>
           </div>
         </div>
