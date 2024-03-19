@@ -142,7 +142,7 @@ function SummaryV3() {
           </span>
           <div className="flex items-center space-x-2">
             <h3 className="sm:text-2xl text-xl text-bgray-900 dark:text-white font-bold leading-[36px]">
-              $48,574.21
+              1,200 μg/m³
             </h3>
             <span className="text-sm font-medium text-success-300">+20%</span>
           </div>
