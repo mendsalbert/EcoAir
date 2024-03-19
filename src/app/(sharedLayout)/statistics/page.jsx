@@ -19,7 +19,7 @@ function Statistics() {
         <SummaryHis />
         <Efficiency height="h-[180px]" />
       </div>
-      <div className="w-full mb-[24px] xl:flex xl:space-x-[24px]">
+      <div className="w-full mb-[24px] xl:flex ">
         <SummaryHeatMap />
       </div>
       <section className="2xl:w-70 w-full 2xl:mb-0 mb-6">
