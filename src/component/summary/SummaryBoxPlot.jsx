@@ -124,28 +124,7 @@ function SummaryHeatMap() {
             </span>
           </div> */}
         </div>
-        <DateFilter
-          options={[
-            "PM2.5",
-            "PM10",
-            "NO₂",
-            "CO",
-            "so2",
-            "pressure",
-            "relativehumidity",
-          ]}
-        />
-        <DateFilter
-          options={[
-            "PM2.5",
-            "PM10",
-            "NO₂",
-            "CO",
-            "so2",
-            "pressure",
-            "relativehumidity",
-          ]}
-        />
+        <DateFilter options={["Global", "USA", "Ghana", "Nigeria"]} />
 
         <DateFilter options={["Year", "Monthly", "Weekly", "Hourly"]} />
       </div>
