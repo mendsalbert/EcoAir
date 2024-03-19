@@ -26,10 +26,6 @@ function Statistics() {
         <SummaryV3 />
         <ListTab />
       </section>
-      <section className="2xl:flex-1 w-full">
-        <EfficiencyV2 />
-        <TeamChat />
-      </section>
     </>
   );
 }
