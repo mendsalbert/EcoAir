@@ -18,7 +18,6 @@ function SidebarV2() {
               alt="logo"
             />
             <p className="font-bold">EcoAir</p>
-
             <Image
               priority={true}
               height={logoW.height}
