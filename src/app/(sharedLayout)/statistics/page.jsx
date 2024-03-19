@@ -10,6 +10,7 @@ import EfficiencyV2 from "@/component/revenueFlow/EfficiencyV2";
 import TeamChat from "@/component/teamChat";
 import SummaryHis from "@/component/summary/SummaryHis";
 import SummaryBoxPlot from "@/component/summary/SummaryBoxPlot";
+import SummaryHeatMap from "@/component/summary/SummaryBoxPlot";
 
 function Statistics() {
   return (
@@ -19,7 +20,7 @@ function Statistics() {
         <Efficiency height="h-[180px]" />
       </div>
       <div className="w-full mb-[24px] xl:flex xl:space-x-[24px]">
-        <SummaryBoxPlot />
+        <SummaryHeatMap />
       </div>
       <section className="2xl:w-70 w-full 2xl:mb-0 mb-6">
         <SummaryV3 />
