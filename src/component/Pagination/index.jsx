@@ -6,7 +6,7 @@ function Pagination() {
     <div className="pagination-content w-full">
       <div className="flex w-full items-center justify-center lg:justify-between">
         <PaginationV1 />
-        <PaginationV2 />
+        {/* <PaginationV2 /> */}
       </div>
     </div>
   );
