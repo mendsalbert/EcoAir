@@ -11,7 +11,7 @@ function ListTab({ pageSize }) {
         <div className="flex h-[56px] w-full space-x-4">
           <Search />
         </div>
-        <FilterFull />
+        {/* <FilterFull /> */}
         <UserTab pageSize={pageSize} />
         <Pagination />
       </div>
