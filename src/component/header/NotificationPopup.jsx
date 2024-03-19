@@ -55,7 +55,7 @@ function NotificationPopup({ active, handlePopup }) {
                 <div className="noti-item">
                   <p className="mb-1 text-sm font-medium text-bgray-600 dark:text-bgray-50">
                     <strong className="text-bgray-900 dark:text-white">
-                      Ghana
+                      Ghana " "
                     </strong>
                     send a new payment for
                     <strong className="text-bgray-900 dark:text-white">
