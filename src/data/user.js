@@ -20,6 +20,7 @@ const user = [
     email: "devon@mail.com",
     location: "Philadelphia, USA",
     spent: "101.00",
+    overall: "43",
   },
   {
     id: 2,
