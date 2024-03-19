@@ -30,20 +30,7 @@ function SummaryV3() {
     }
   }, [theme]);
 
-  let month = [
-    "Jan",
-    "Feb",
-    "Mar",
-    "April",
-    "May",
-    "Jun",
-    "July",
-    "Aug",
-    "Sep",
-    "Oct",
-    "Nov",
-    "Dec",
-  ];
+  let month = ["2020", "2021", "2022", "2023", "2024"];
 
   const plugins = [
     {
@@ -155,9 +142,7 @@ function SummaryV3() {
             </span>
           </div>
         </div>
-        <DateFilter
-          options={["Jan 10 - Jan 16", "Jan 11 - Jan 16", "Jan 12 - Jan 16"]}
-        />
+        <DateFilter options={["Year", "Monthly", "Weekly", "Hourly"]} />
       </div>
       <div className="w-full h-[280px]">
         <LineChart
