@@ -154,12 +154,6 @@ function SummaryV3() {
               Signed
             </span>
           </div>
-          <div className="flex space-x-2 items-center">
-            <div className="w-3 h-3 bg-orange rounded-full"></div>
-            <span className="text-bgray-700 dark:text-white text-sm font-medium">
-              Lost
-            </span>
-          </div>
         </div>
         <DateFilter
           options={["Jan 10 - Jan 16", "Jan 11 - Jan 16", "Jan 12 - Jan 16"]}
