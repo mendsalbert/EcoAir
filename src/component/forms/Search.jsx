@@ -31,7 +31,7 @@ function Search() {
           <input
             type="text"
             id="listSearch"
-            placeholder="Search by name, email, or others..."
+            placeholder="Search by country"
             className="search-input w-full border-none bg-bgray-100 px-0 text-sm tracking-wide text-bgray-600 placeholder:text-sm placeholder:font-medium placeholder:text-bgray-500 focus:outline-none focus:ring-0 dark:bg-darkblack-500"
           />
         </label>
