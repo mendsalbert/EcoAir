@@ -138,7 +138,7 @@ function SummaryV3() {
       <div className="flex justify-between items-center pb-2 mb-2">
         <div>
           <span className="text-sm font-medium text-bgray-600 dark:text-white">
-            Overall Balance
+            Overall Air Quality
           </span>
           <div className="flex items-center space-x-2">
             <h3 className="sm:text-2xl text-xl text-bgray-900 dark:text-white font-bold leading-[36px]">
