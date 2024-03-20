@@ -27,7 +27,7 @@ function TotalWidget() {
           amount="410"
           groth=""
           id="totalEarn"
-          isPrev={false}
+          isPrev={true}
           graphColor="#926DFF"
         />{" "}
         <TotalWidgetCard
