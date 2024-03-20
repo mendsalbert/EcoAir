@@ -60,6 +60,16 @@ function TotalWidget() {
           isPrev={true}
           graphColor="#22C55E"
         />
+        <TotalWidgetCard
+          totalEarnImg={totalEarn5}
+          memberImg={memberImg}
+          title="Instruments"
+          amount="25,000"
+          groth="+ 10% reduction "
+          id="totalGoal"
+          isPrev={true}
+          graphColor="#22C55E"
+        />
       </div>
     </div>
   );
