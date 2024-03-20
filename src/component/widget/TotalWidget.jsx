@@ -25,7 +25,7 @@ function TotalWidget() {
           memberImg={memberImg}
           title="Paremeters"
           amount="410"
-          groth=""
+          groth="PM10,PM2.5,O₃ mass.."
           id="totalEarn"
           isPrev={true}
           graphColor="#926DFF"
