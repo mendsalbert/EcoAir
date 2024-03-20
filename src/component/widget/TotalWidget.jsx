@@ -27,7 +27,7 @@ function TotalWidget() {
           amount="410"
           groth="PM10,PM2.5,O₃ mass.."
           id="totalEarn"
-          isPrev={true}
+          isPrev={false}
           graphColor="#926DFF"
         />{" "}
         <TotalWidgetCard
