@@ -43,7 +43,7 @@ function TotalWidget() {
         <TotalWidgetCard
           totalEarnImg={totalEarn4}
           memberImg={memberImg}
-          title="Top Pollutants/PM2.5"
+          title="Manufacturers"
           amount="15 µg/m³"
           groth="Ghana"
           id="totalSpending"
