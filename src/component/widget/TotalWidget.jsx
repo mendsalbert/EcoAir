@@ -13,7 +13,7 @@ function TotalWidget() {
         <TotalWidgetCard
           totalEarnImg={totalEarn1}
           memberImg={memberImg}
-          title="Current AQI"
+          title="Owners"
           amount="210.00"
           groth="+ 3.5%"
           id="totalEarn"
