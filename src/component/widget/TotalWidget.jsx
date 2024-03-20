@@ -23,7 +23,7 @@ function TotalWidget() {
         <TotalWidgetCard
           totalEarnImg={totalEarn2}
           memberImg={memberImg}
-          title="Air Sensors"
+          title="Paremeters"
           amount="410"
           groth=""
           id="totalEarn"
