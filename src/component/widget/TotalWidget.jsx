@@ -20,6 +20,7 @@ function TotalWidget() {
           throw new Error(`Error: ${response.statusText}`);
         }
         const data = await response.json();
+        console.log(data);
         setLocations(data);
       } catch (error) {
         // setError(error.message);
@@ -30,7 +31,6 @@ function TotalWidget() {
 
     fetchLocations();
   }, []);
-  console.log(locations);
   return (
     <div className="mb-[24px] w-full">
       <div className="grid grid-cols-1 gap-[24px] lg:grid-cols-3">
