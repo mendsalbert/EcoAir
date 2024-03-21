@@ -22,7 +22,7 @@ function TotalWidget() {
         const data = await response.json();
         setLocations(data);
       } catch (error) {
-        setError(error.message);
+        // setError(error.message);
       } finally {
         console.log("finally");
       }
