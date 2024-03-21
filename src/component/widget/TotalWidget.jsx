@@ -30,6 +30,8 @@ function TotalWidget() {
 
     fetchLocations();
   }, []);
+
+  console.log(locations);
   return (
     <div className="mb-[24px] w-full">
       <div className="grid grid-cols-1 gap-[24px] lg:grid-cols-3">
