@@ -1,3 +1,5 @@
+"use Client";
+import React, { useState, useEffect } from "react";
 import totalEarn1 from "/public/static/images/icons/total-earn-1.svg";
 import totalEarn2 from "/public/static/images/icons/total-earn-2.svg";
 import totalEarn3 from "/public/static/images/icons/total-earn-3.svg";
@@ -7,6 +9,26 @@ import memberImg from "/public/static/images/avatar/members-2.png";
 import TotalWidgetCard from "./TotalWidgetCard";
 
 function TotalWidget() {
+  const [locations, setLocations] = useState([]);
+  useEffect(() => {
+    async function fetchLocations() {
+      try {
+        const response = await fetch("/api/users");
+        if (!response.ok) {
+          throw new Error(`Error: ${response.statusText}`);
+        }
+        const data = await response.json();
+        setLocations(data);
+      } catch (error) {
+        setError(error.message);
+      } finally {
+        console.log("finally");
+      }
+    }
+
+    fetchLocations();
+  }, []);
+
   return (
     <div className="mb-[24px] w-full">
       <div className="grid grid-cols-1 gap-[24px] lg:grid-cols-3">
