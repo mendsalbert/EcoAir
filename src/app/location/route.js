@@ -1,5 +1,5 @@
-function handler(res, req) {
-  res.status(200).json({ messag: "hello world" });
-}
+import { NextResponse } from "next/server";
 
-export default handler;
+export async function GET() {
+  return NextResponse.json({ name: "Anuj Singh" });
+}
