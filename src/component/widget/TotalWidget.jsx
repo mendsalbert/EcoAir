@@ -31,7 +31,6 @@ function TotalWidget() {
     fetchLocations();
   }, []);
 
-  console.log(locations);
   return (
     <div className="mb-[24px] w-full">
       <div className="grid grid-cols-1 gap-[24px] lg:grid-cols-3">
@@ -39,7 +38,7 @@ function TotalWidget() {
           totalEarnImg={totalEarn1}
           memberImg={memberImg}
           title="Locations"
-          amount="210.00"
+          amount={locations.length > 0 ? locations.length : 0}
           groth="+ 3.5%"
           id="totalEarn"
           isPrev={true}
