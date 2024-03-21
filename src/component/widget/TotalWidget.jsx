@@ -13,7 +13,9 @@ function TotalWidget() {
   useEffect(() => {
     async function fetchLocations() {
       try {
-        const response = await fetch("/api/users");
+        const response = await fetch(
+          "localhost:8001/api/v1/locations/get-locations"
+        );
         if (!response.ok) {
           throw new Error(`Error: ${response.statusText}`);
         }
