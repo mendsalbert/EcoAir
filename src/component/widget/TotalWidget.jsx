@@ -20,7 +20,6 @@ function TotalWidget() {
           throw new Error(`Error: ${response.statusText}`);
         }
         const data = await response.json();
-        console.log(data);
         setLocations(data);
       } catch (error) {
         // setError(error.message);
