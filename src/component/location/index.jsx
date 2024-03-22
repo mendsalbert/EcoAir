@@ -1,4 +1,6 @@
+"use Client";
 import LocationSelector from "../forms/LocationSelector";
+import React, { useState, useEffect } from "react";
 
 import dynamic from "next/dynamic";
 
@@ -7,6 +9,28 @@ const Map = dynamic(() => import("../chart/Map"), {
 });
 
 function LocationV2() {
+  const [locations, setLocations] = useState([]);
+  useEffect(() => {
+    async function fetchLocations() {
+      try {
+        const response = await fetch(
+          "http://localhost:8001/api/v1/locations/get-locations"
+        );
+        if (!response.ok) {
+          throw new Error(`Error: ${response.statusText}`);
+        }
+        const data = await response.json();
+        setLocations(data);
+      } catch (error) {
+        // setError(error.message);
+      } finally {
+        console.log("finally");
+      }
+    }
+
+    fetchLocations();
+  }, []);
+
   return (
     <div className="w-full rounded-lg bg-white dark:bg-darkblack-600 p-6">
       <div className="flex justify-between items-center mb-4">
@@ -93,7 +117,7 @@ function LocationV2() {
         </div>
         <div className=" w-full flex justify-center">
           <div className="xl:w-full md:w-[350px] w-[300px]">
-            <Map />
+            <Map data={locations} />
           </div>
         </div>
       </div>
