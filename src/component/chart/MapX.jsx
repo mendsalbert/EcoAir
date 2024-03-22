@@ -48,7 +48,7 @@ function Map() {
       markerStyle: {
         initial: {
           fill: "#22C55E",
-          r: 4,
+          r: 10,
         },
       },
       draggable: true,
