@@ -2,7 +2,7 @@
 
 import dynamic from "next/dynamic";
 
-const Map = dynamic(() => import("../../../component/chart/Map"), {
+const Map = dynamic(() => import("../../../component/chart/MapX"), {
   ssr: false,
 });
 
