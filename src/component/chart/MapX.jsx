@@ -93,7 +93,7 @@ function Map() {
   return (
     <div
       id="world-map"
-      className="w-full  rounded-lg border border-[#E2E8F0] overflow-hidden"
+      className="w-full  rounded-lg border  overflow-hidden"
     ></div>
   );
 }
