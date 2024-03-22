@@ -1,31 +1,35 @@
 "use client";
 import jsVectorMap from "jsvectormap";
 import "jsvectormap/dist/maps/world.js";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function Map() {
-  const markers = [
-    {
-      name: "Palestine",
-      coords: [31.5, 34.8],
-    },
-    {
-      name: "Russia",
-      coords: [61, 105],
-    },
-    {
-      name: "Greenland",
-      coords: [72, -42],
-    },
-    {
-      name: "Canada",
-      coords: [56, -106],
-    },
-    {
-      name: "Australia",
-      coords: [-25, 140],
-    },
-  ];
+  const [locations, setLocations] = useState([]);
+  useEffect(() => {
+    async function fetchLocations() {
+      try {
+        const response = await fetch(
+          "http://localhost:8001/api/v1/locations/get-locations"
+        );
+        if (!response.ok) {
+          throw new Error(`Error: ${response.statusText}`);
+        }
+        const data = await response.json();
+        setLocations(data);
+      } catch (error) {
+        // setError(error.message);
+      } finally {
+        console.log("finally");
+      }
+    }
+
+    fetchLocations();
+  }, []);
+
+  const markers = locations?.map((location) => ({
+    name: location.name,
+    coords: [location.coordinates.latitude, location.coordinates.longitude],
+  }));
 
   useEffect(() => {
     let map = undefined;
