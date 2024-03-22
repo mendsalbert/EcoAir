@@ -42,7 +42,7 @@ function Map() {
     }));
 
     const newMap = new jsVectorMap({
-      map: "world",
+      map: "world_merc",
       selector: "#world-map",
       markers: markers, // Use the markers from state
       markerStyle: {
