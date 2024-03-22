@@ -164,32 +164,7 @@ function Map() {
       showTooltip: true,
       zoomStep: 0.2,
       bindTouchEvents: true,
-      regionStyle: {
-        // Region style
-        initial: {
-          fill: "#DBE7FA",
-          fillOpacity: 1,
-          stroke: "none",
-          strokeWidth: 0,
-          strokeOpacity: 1,
-        },
-        hover: {
-          fillOpacity: 0.7,
-          cursor: "pointer",
-          fill: "#22C55E",
-        },
-        selected: {
-          fill: "#000",
-        },
-        selectedHover: {},
-      },
-      visualizeData: {
-        scale: ["#22C55E", "#DBEAFE"],
-        values: {
-          US: 29,
-          CA: 190,
-        },
-      },
+
       // ... other map options
     });
 
