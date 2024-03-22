@@ -26,7 +26,7 @@ function Map() {
     fetchLocations();
   }, []);
 
-  const markers = locations?.map((location) => ({
+  markers = locations?.map((location) => ({
     name: location.name,
     coords: [location.coordinates.latitude, location.coordinates.longitude],
   }));
