@@ -39,7 +39,7 @@ function TotalWidget() {
           memberImg={memberImg}
           title="Locations"
           amount={locations.length > 0 ? locations.length : 0}
-          groth="+ 2.5%"
+          groth="+2.5%"
           id="totalEarn"
           isPrev={true}
           graphColor="#22C55E"
