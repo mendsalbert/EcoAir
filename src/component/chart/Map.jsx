@@ -31,6 +31,7 @@ function Map() {
     coords: [location.coordinates.latitude, location.coordinates.longitude],
   }));
 
+  console.log(markers);
   useEffect(() => {
     let map = undefined;
     if (map === undefined) {
