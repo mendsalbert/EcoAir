@@ -188,7 +188,7 @@ function Map() {
   useEffect(() => {
     return () => {
       if (map) {
-        map.remove();
+        map?.remove();
       }
     };
   }, [map]);
