@@ -44,7 +44,7 @@ function Map() {
     console.log("====makers====", markers[0]);
 
     const newMap = new jsVectorMap({
-      map: "world",
+      map: "world_merc",
       selector: "#world-map",
       markers: [
         { name: "Egypt", coords: [26.8206, 30.8025] },
