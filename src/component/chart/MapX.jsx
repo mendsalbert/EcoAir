@@ -46,7 +46,6 @@ function Map() {
       map: "world",
       selector: "#world-map",
       markersSelectable: true, // The markers are selectable
-
       markers: markers, // Use the markers from state
       markerStyle: {
         initial: {
