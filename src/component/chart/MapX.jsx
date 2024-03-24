@@ -57,6 +57,40 @@ function Map() {
           style: { fill: "red" },
         },
       ],
+
+      onMarkerSelected(index, isSelected, selectedMarkers) {
+        console.log(index, isSelected, selectedMarkers);
+      },
+
+      // -------- Labels --------
+      labels: {
+        markers: {
+          render: function (marker) {
+            return marker.name;
+          },
+        },
+      },
+
+      // -------- Marker and label style --------
+      markers: markers,
+      markerStyle: {
+        hover: {
+          stroke: "#DDD",
+          strokeWidth: 3,
+          fill: "#FFF",
+        },
+        selected: {
+          fill: "#ff525d",
+        },
+      },
+      markerLabelStyle: {
+        initial: {
+          fontFamily: "Poppins",
+          fontSize: 13,
+          fontWeight: 500,
+          fill: "#35373e",
+        },
+      },
       // Use the markers from state
       //   markerStyle: {
       //     initial: {
