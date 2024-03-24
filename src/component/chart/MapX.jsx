@@ -57,6 +57,7 @@ function Map() {
           style: { fill: "red" },
         },
       ],
+      showTooltip: false,
 
       // Use the markers from state
       //   markerStyle: {
