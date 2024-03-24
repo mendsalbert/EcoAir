@@ -53,7 +53,7 @@ function Map() {
         },
       },
       draggable: true,
-      zoomButtons: false,
+      zoomButtons: true,
       zoomOnScroll: true,
       zoomOnScrollSpeed: 3,
       zoomMax: 24,
