@@ -93,11 +93,7 @@ function Map() {
   //   }, [map]);
 
   const defaultProps = {
-    center: {
-      lat: 10.99835602,
-      lng: 77.01502627,
-    },
-    zoom: 11,
+    zoom: 14,
   };
 
   return (
