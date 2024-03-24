@@ -79,6 +79,7 @@ function Map() {
       // ... other map options
 
       onMarkerTipShow: function (e, label, index) {
+        alert("working");
         // Set the content of the label. This function receives the event e, the label DOM element, and the index of the marker.
         label.html(markers[index].name);
       },
