@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import jsVectorMap from "jsvectormap";
-import "jsvectormap/dist/maps/world.js";
 
+import jsVectorMap from "jsvectormap";
+import "jsvectormap/dist/maps/world";
 function Map() {
   const [locations, setLocations] = useState([]);
   const [map, setMap] = useState(null);
