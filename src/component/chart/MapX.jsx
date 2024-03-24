@@ -43,7 +43,7 @@ function Map() {
 
     console.log("====makers====", markers[0]);
 
-    const map = new jsVectorMap({
+    const newMap = new jsVectorMap({
       map: "world",
       selector: "#map",
       markers: [
