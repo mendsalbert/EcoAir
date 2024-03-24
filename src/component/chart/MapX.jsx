@@ -86,7 +86,7 @@ function Map() {
       markerLabelStyle: {
         initial: {
           fontFamily: "Poppins",
-          fontSize: 13,
+          fontSize: 9,
           fontWeight: 500,
           fill: "#35373e",
         },
