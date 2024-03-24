@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-
 import jsVectorMap from "jsvectormap";
 import "jsvectormap/dist/maps/world";
 function Map() {
@@ -44,7 +43,7 @@ function Map() {
 
     console.log("====makers====", markers[0]);
 
-    const newMap = new jsVectorMap({
+    const map = new jsVectorMap({
       map: "world",
       selector: "#map",
       markers: [
