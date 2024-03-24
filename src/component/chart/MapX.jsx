@@ -48,35 +48,35 @@ function Map() {
       selector: "#world-map",
       markersSelectableOne: true,
       markers: markers, // Use the markers from state
-      markerStyle: {
-        initial: {
-          fill: "#22C55E",
-          r: 8,
-        },
-      },
-      draggable: true,
-      zoomButtons: true,
-      zoomOnScroll: true,
-      zoomOnScrollSpeed: 3,
-      zoomMax: 60,
-      zoomMin: 1,
-      zoomAnimate: true,
-      showTooltip: true,
-      zoomStep: 0.2,
-      bindTouchEvents: true,
-      regionStyle: {
-        // Region style
+      //   markerStyle: {
+      //     initial: {
+      //       fill: "#22C55E",
+      //       r: 8,
+      //     },
+      //   },
+      //   draggable: true,
+      //   zoomButtons: true,
+      //   zoomOnScroll: true,
+      //   zoomOnScrollSpeed: 3,
+      //   zoomMax: 60,
+      //   zoomMin: 1,
+      //   zoomAnimate: true,
+      //   showTooltip: true,
+      //   zoomStep: 0.2,
+      //   bindTouchEvents: true,
+      //   regionStyle: {
+      //     // Region style
 
-        hover: {
-          fillOpacity: 0.7,
-          cursor: "pointer",
-          fill: "#22C55E",
-        },
-        selected: {
-          fill: "#000",
-        },
-        selectedHover: {},
-      },
+      //     hover: {
+      //       fillOpacity: 0.7,
+      //       cursor: "pointer",
+      //       fill: "#22C55E",
+      //     },
+      //     selected: {
+      //       fill: "#000",
+      //     },
+      //     selectedHover: {},
+      //   },
 
       // ... other map options
 
