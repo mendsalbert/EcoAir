@@ -80,13 +80,13 @@ function Map() {
 
       // ... other map options
 
-      onMarkerTipShow: function (e, label, markerIndex) {
-        // Use the index from the markersData array to find the right location
-        const marker = markersData.find((m) => m.index === markerIndex);
-        if (marker) {
-          label.html(marker.name);
-        }
-      },
+      //   onMarkerTipShow: function (e, label, markerIndex) {
+      //     // Use the index from the markersData array to find the right location
+      //     const marker = markersData.find((m) => m.index === markerIndex);
+      //     if (marker) {
+      //       label.html(marker.name);
+      //     }
+      //   },
     });
 
     setMap(newMap); // Save the map instance in the state
