@@ -78,10 +78,12 @@ function Map() {
 
       // ... other map options
 
-      onMarkerTipShow: function (e, label, index) {
-        alert("working");
-        // Set the content of the label. This function receives the event e, the label DOM element, and the index of the marker.
-        label.html(markers[index].name);
+      onMarkerTipShow: function (e, label, markerIndex) {
+        // Use the index from the markersData array to find the right location
+        const marker = markersData.find((m) => m.index === markerIndex);
+        if (marker) {
+          label.html(marker.name);
+        }
       },
     });
 
