@@ -56,7 +56,7 @@ function Map() {
       zoomButtons: false,
       zoomOnScroll: true,
       zoomOnScrollSpeed: 3,
-      zoomMax: 2,
+      zoomMax: 24,
       zoomMin: 1,
       zoomAnimate: true,
       showTooltip: true,
