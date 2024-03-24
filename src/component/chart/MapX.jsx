@@ -36,11 +36,11 @@ function Map() {
   };
 
   const initMap = () => {
-    // const markers = locations.map((location, index) => ({
-    //   name: location.name,
-    //   coords: [location.coordinates.latitude, location.coordinates.longitude],
-    //   index,
-    // }));
+    const markers = locations.map((location, index) => ({
+      name: location.name,
+      coords: [location.coordinates.latitude, location.coordinates.longitude],
+      index,
+    }));
 
     console.log("====makers====", markers[0]);
     const newMap = new jsVectorMap({
