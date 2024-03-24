@@ -41,7 +41,7 @@ function Map() {
       coords: [location.coordinates.latitude, location.coordinates.longitude],
     }));
 
-    console.log("====makers====", markers.length);
+    console.log("====makers====", marker);
     const newMap = new jsVectorMap({
       map: "world",
       selector: "#world-map",
