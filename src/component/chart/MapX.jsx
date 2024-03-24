@@ -83,14 +83,14 @@ function Map() {
           fill: "#ff525d",
         },
       },
-      markerLabelStyle: {
-        initial: {
-          fontFamily: "Poppins",
-          fontSize: 9,
-          fontWeight: 500,
-          fill: "#35373e",
-        },
-      },
+      //   markerLabelStyle: {
+      //     initial: {
+      //       fontFamily: "Poppins",
+      //       fontSize: 9,
+      //       fontWeight: 500,
+      //       fill: "#35373e",
+      //     },
+      //   },
       // Use the markers from state
       //   markerStyle: {
       //     initial: {
