@@ -45,7 +45,7 @@ function Map() {
     const newMap = new jsVectorMap({
       map: "world",
       selector: "#world-map",
-      markersSelectableOne: true
+      markersSelectableOne: true,
       markers: markers, // Use the markers from state
       markerStyle: {
         initial: {
