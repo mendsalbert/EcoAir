@@ -19,6 +19,7 @@
     "aos": "^2.3.4",
     "chart.js": "^4.3.2",
     "date-fns": "^2.30.0",
+    "google-map-react": "^2.2.1",
     "jsvectormap": "^1.5.3",
     "next": "13.4.13",
     "next-transpile-modules": "^10.0.1",
