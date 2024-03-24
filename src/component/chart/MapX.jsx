@@ -35,22 +35,20 @@ function Map() {
     }
   };
 
- 
   const initMap = () => {
     // const markers = locations.map((location, index) => ({
     //   name: location.name,
     //   coords: [location.coordinates.latitude, location.coordinates.longitude],
     //   index,
     // }));
-  
 
     console.log("====makers====", markers[0]);
     const newMap = new jsVectorMap({
       map: "world",
       selector: "#world-map",
       //   markersSelectableOne: true,
-    //   markers: markers, 
-    markers: [
+      //   markers: markers,
+      markers: [
         { name: "Egypt", coords: [26.8206, 30.8025] },
         { name: "United Kingdom", coords: [55.3781, 3.436] },
         {
@@ -60,7 +58,7 @@ function Map() {
           // Keep in mind `style` object is merged with `markerStyle.initial`
           style: { fill: "red" },
         },
-      ];
+      ],
       // Use the markers from state
       //   markerStyle: {
       //     initial: {
