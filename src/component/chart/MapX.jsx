@@ -57,8 +57,13 @@ function Map() {
           style: { fill: "red" },
         },
       ],
-      showTooltip: false,
-
+      onRegionTooltipShow(event, tooltip, code) {
+        tooltip.text(
+          `<h5>${tooltip.text()} - Country</h5>` +
+            `<p class="text-xs">This message is gonna appear when hovering over every single region.</p>`,
+          true // Enables HTML
+        );
+      },
       // Use the markers from state
       //   markerStyle: {
       //     initial: {
