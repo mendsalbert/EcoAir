@@ -128,7 +128,7 @@
 
 // export default Map;
 import * as React from "react";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { createRoot } from "react-dom/client";
 import Map, {
   Marker,
