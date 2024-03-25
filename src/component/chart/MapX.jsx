@@ -174,13 +174,7 @@ export default function App() {
   return (
     <>
       <Map
-        initialViewState={{
-          latitude: 40,
-          longitude: -100,
-          zoom: 3.5,
-          bearing: 0,
-          pitch: 0,
-        }}
+        initialViewState={{}}
         mapStyle="mapbox://styles/mapbox/dark-v9"
         mapboxAccessToken={TOKEN}
       >
