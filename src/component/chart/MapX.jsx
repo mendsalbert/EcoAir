@@ -176,7 +176,7 @@ function MapX() {
     <>
       <div
         // className="w-screen"
-        className="w-screen h-screen rounded-lg border border-[#E2E8F0] overflow-hidden"
+        className="w-screen h-[200px] rounded-lg border border-[#E2E8F0] overflow-hidden"
       >
         <MapGL
           initialViewState={
