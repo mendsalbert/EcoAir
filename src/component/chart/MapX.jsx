@@ -175,7 +175,7 @@ function MapX() {
   return (
     <>
       <div
-        className="w-screen h-[40px]"
+        className="w-screen"
         // className="w-screen h-screen rounded-lg border border-[#E2E8F0] overflow-hidden"
       >
         <MapGL
