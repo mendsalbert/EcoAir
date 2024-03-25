@@ -193,7 +193,7 @@ export default function App() {
 
           {/* {pins} */}
           <Marker
-            ongitude={-122.4}
+            longitude={-122.4}
             latitude={37.8}
             color="red"
             anchor="bottom"
