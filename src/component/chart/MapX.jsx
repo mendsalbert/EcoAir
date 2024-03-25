@@ -136,7 +136,8 @@ import MapGL, { Source, Layer } from "react-map-gl";
 import ControlPanel from "./MapControlPanel";
 import { heatmapLayer } from "./MapStyle";
 
-const MAPBOX_TOKEN = ""; // Set your mapbox token here
+const MAPBOX_TOKEN =
+  "pk.eyJ1IjoibWVuZHNhbGJlcnQiLCJhIjoiY2x1NjloMmh2MDZjdDJrbXUzajQ2cW96dyJ9.DlO7KoEVjfnmCSKLSAPUjQ"; // Set your mapbox token here
 
 function filterFeaturesByDay(featureCollection, time) {
   const date = new Date(time);
