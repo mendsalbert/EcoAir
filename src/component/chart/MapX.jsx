@@ -227,8 +227,8 @@ export default function App() {
       data.features.map((city, index) => (
         <Marker
           key={`marker-${index}`}
-          longitude={city.longitude}
-          latitude={city.latitude}
+          longitude={city.geometry.coordinates[0]}
+          latitude={city.geometry.coordinates[1]}
           anchor="bottom"
           onClick={(e) => {
             // If we let the click event propagates to the map, it will immediately close the popup
