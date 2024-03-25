@@ -191,7 +191,7 @@ function MapX() {
           mapStyle="mapbox://styles/mapbox/dark-v9"
           mapboxAccessToken={TOKEN}
         >
-          {/* {pins} */}
+          {pins}
         </MapGL>
 
         {/* <ControlPanel /> */}
