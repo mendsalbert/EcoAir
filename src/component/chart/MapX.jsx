@@ -196,7 +196,7 @@ export default function App() {
 
           {pins}
 
-          {popupInfo && (
+          {/* {popupInfo && (
             <Popup
               anchor="top"
               longitude={Number(popupInfo.longitude)}
@@ -214,7 +214,7 @@ export default function App() {
               </div>
               <img width="100%" src={popupInfo.image} />
             </Popup>
-          )}
+          )} */}
         </Map>
 
         {/* <ControlPanel /> */}
