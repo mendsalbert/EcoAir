@@ -386,11 +386,11 @@ export default function App() {
           mapStyle="mapbox://styles/mapbox/dark-v9"
           mapboxAccessToken={MAPBOX_TOKEN}
         >
-          {/* {data && (
+          {data && (
             <Source type="geojson" data={data}>
               <Layer {...heatmapLayer} />
             </Source>
-          )} */}
+          )}
 
           <GeolocateControl position="top-left" />
           <FullscreenControl position="top-left" />
