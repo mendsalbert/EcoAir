@@ -130,7 +130,7 @@
 import * as React from "react";
 import { useState, useEffect, useMemo } from "react";
 import { createRoot } from "react-dom/client";
-import MapGL, { Source, Layer } from "react-map-gl";
+import MapGL, { Source, Layer, Marker } from "react-map-gl";
 // import ControlPanel from './control-panel';
 // import {heatmapLayer} from './map-style';
 import ControlPanel from "./MapControlPanel";
@@ -226,6 +226,16 @@ export default function App() {
           mapStyle="mapbox://styles/mapbox/dark-v9"
           mapboxAccessToken={MAPBOX_TOKEN}
         >
+          {locations.map((location, index) => (
+            <Marker
+              key={index}
+              longitude={location.coordinates.longitude}
+              latitude={location.coordinates.latitude}
+            >
+              {/* Custom marker JSX here, for example, an icon or image */}
+              <div>You can place any custom SVG or icon here</div>
+            </Marker>
+          ))}
           {data && (
             <Source type="geojson" data={data}>
               <Layer {...heatmapLayer} />
