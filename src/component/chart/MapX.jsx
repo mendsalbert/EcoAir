@@ -179,15 +179,13 @@ export default function App() {
         //   className="w-screen h-screen rounded-lg border border-[#E2E8F0] overflow-hidden"
       >
         <Map
-          initialViewState={
-            {
-              // latitude: 40,
-              // longitude: -100,
-              // zoom: 3.5,
-              // bearing: 0,
-              // pitch: 0,
-            }
-          }
+          initialViewState={{
+            latitude: 40,
+            longitude: -100,
+            zoom: 3.5,
+            bearing: 0,
+            pitch: 0,
+          }}
           mapStyle="mapbox://styles/mapbox/dark-v9"
           mapboxAccessToken={TOKEN}
         >
