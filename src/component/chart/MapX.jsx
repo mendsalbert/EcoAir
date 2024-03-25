@@ -224,11 +224,11 @@ export default function App() {
 
   const pins = useMemo(
     () =>
-      data.features.map((city, index) => (
+      earthquakes.map((location, index) => (
         <Marker
           key={`marker-${index}`}
-          longitude={city.geometry.coordinates[0]}
-          latitude={city.geometry.coordinates[1]}
+          longitude={location.coordinates.longitude}
+          latitude={location.coordinates.latitude}
           anchor="bottom"
           onClick={(e) => {
             // If we let the click event propagates to the map, it will immediately close the popup
