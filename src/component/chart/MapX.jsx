@@ -397,7 +397,7 @@ export default function App() {
           <NavigationControl position="top-left" />
           <ScaleControl />
 
-          {pins}
+          {/* {pins} */}
 
           {popupInfo && (
             <Popup
