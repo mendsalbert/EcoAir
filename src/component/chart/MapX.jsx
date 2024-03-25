@@ -226,21 +226,32 @@ export default function App() {
           mapStyle="mapbox://styles/mapbox/dark-v9"
           mapboxAccessToken={MAPBOX_TOKEN}
         >
-          {locations.map((location, index) => (
-            <Marker
-              key={index}
-              longitude={location.coordinates.longitude}
-              latitude={location.coordinates.latitude}
-            >
-              {/* Custom marker JSX here, for example, an icon or image */}
-              <div>You can place any custom SVG or icon here</div>
-            </Marker>
-          ))}
           {data && (
             <Source type="geojson" data={data}>
               <Layer {...heatmapLayer} />
             </Source>
           )}
+
+          {
+            // Add markers on top of the heatmap
+            data.features.map((feature, index) => (
+              <Marker
+                key={index}
+                latitude={feature.geometry.coordinates[1]}
+                longitude={feature.geometry.coordinates[0]}
+              >
+                <div
+                  className="marker"
+                  onClick={() => {
+                    // Handler for marker click event
+                    console.log("Marker clicked!", feature);
+                  }}
+                >
+                  {/* Custom marker content */}
+                </div>
+              </Marker>
+            ))
+          }
         </MapGL>
 
         {/* <ControlPanel
