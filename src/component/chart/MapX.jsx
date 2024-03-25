@@ -130,7 +130,16 @@
 import * as React from "react";
 import { useState, useEffect, useMemo } from "react";
 import { createRoot } from "react-dom/client";
-import MapGL, { Source, Layer, Marker } from "react-map-gl";
+import MapGL, {
+  Source,
+  Layer,
+  Marker,
+  Popup,
+  NavigationControl,
+  FullscreenControl,
+  ScaleControl,
+  GeolocateControl,
+} from "react-map-gl";
 // import ControlPanel from './control-panel';
 // import {heatmapLayer} from './map-style';
 import ControlPanel from "./MapControlPanel";
