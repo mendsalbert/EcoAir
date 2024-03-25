@@ -143,8 +143,8 @@ import MapGL, {
 } from "react-map-gl";
 // import ControlPanel from './control-panel';
 // import {heatmapLayer} from './map-style';
-import ControlPanel from "./MapControlPanel";
 import { heatmapLayer } from "./MapStyle";
+import ControlPanel from "./ControlPanel";
 
 const MAPBOX_TOKEN =
   "pk.eyJ1IjoibWVuZHNhbGJlcnQiLCJhIjoiY2x1NjloMmh2MDZjdDJrbXUzajQ2cW96dyJ9.DlO7KoEVjfnmCSKLSAPUjQ"; // Set your mapbox token here
@@ -262,6 +262,11 @@ export default function App() {
             </Source>
           )}
 
+          <GeolocateControl position="top-left" />
+          <FullscreenControl position="top-left" />
+          <NavigationControl position="top-left" />
+          <ScaleControl />
+
           {pins}
 
           {popupInfo && (
@@ -284,6 +289,8 @@ export default function App() {
             </Popup>
           )}
         </MapGL>
+
+        <ControlPanel />
 
         {/* <ControlPanel
           startTime={timeRange[0]}
