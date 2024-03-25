@@ -163,30 +163,31 @@ export default function App() {
 
   useEffect(() => {
     /* global fetch */
-    fetch("https://docs.mapbox.com/mapbox-gl-js/assets/earthquakes.geojson")
+    fetch("http://localhost:8001/api/v1/locations/get-locations")
       .then((resp) => resp.json())
       .then((json) => {
         // Note: In a real application you would do a validation of JSON data before doing anything with it,
         // but for demonstration purposes we ingore this part here and just trying to select needed data...
         console.log(json);
-        const features = json.features;
-        const endTime = features[0].properties.time;
-        const startTime = features[features.length - 1].properties.time;
+        // const features = json.features;
+        // const endTime = features[0].properties.time;
+        // const startTime = features[features.length - 1].properties.time;
 
-        setTimeRange([startTime, endTime]);
+        // setTimeRange([startTime, endTime]);
         setEarthQuakes(json);
-        selectTime(endTime);
+        // selectTime(endTime);
       })
       .catch((err) => console.error("Could not load data", err)); // eslint-disable-line
   }, []);
 
   const data = useMemo(() => {
-    return allDays
-      ? earthquakes
-      : filterFeaturesByDay(earthquakes, selectedTime);
+    return allDays;
+    // return allDays
+    //   ? earthquakes
+    //   : filterFeaturesByDay(earthquakes, selectedTime);
   }, [earthquakes, allDays, selectedTime]);
 
-  //   console.log(data);
+  console.log(data);
   return (
     <>
       <div className="w-screen h-screen rounded-lg border border-[#E2E8F0] overflow-hidden">
@@ -201,11 +202,11 @@ export default function App() {
           mapStyle="mapbox://styles/mapbox/dark-v9"
           mapboxAccessToken={MAPBOX_TOKEN}
         >
-          {data && (
+          {/* {data && (
             <Source type="geojson" data={data}>
               <Layer {...heatmapLayer} />
             </Source>
-          )}
+          )} */}
         </MapGL>
         {/* <ControlPanel
           startTime={timeRange[0]}
