@@ -222,13 +222,34 @@ export default function App() {
 
   console.log(earthquakes);
 
+  //   const pins = useMemo(
+  //     () =>
+  //       earthquakes.map((location, index) => (
+  //         <Marker
+  //           key={`marker-${index}`}
+  //           longitude={location.coordinates.longitude}
+  //           latitude={location.coordinates.latitude}
+  //           anchor="bottom"
+  //           onClick={(e) => {
+  //             // If we let the click event propagates to the map, it will immediately close the popup
+  //             // with `closeOnClick: true`
+  //             e.originalEvent.stopPropagation();
+  //             setPopupInfo(city);
+  //           }}
+  //         >
+  //           <Pin />
+  //         </Marker>
+  //       )),
+  //     []
+  //   );
+
   const pins = useMemo(
     () =>
-      earthquakes.map((location, index) => (
+      CITIES.map((city, index) => (
         <Marker
           key={`marker-${index}`}
-          longitude={location.coordinates.longitude}
-          latitude={location.coordinates.latitude}
+          longitude={city.longitude}
+          latitude={city.latitude}
           anchor="bottom"
           onClick={(e) => {
             // If we let the click event propagates to the map, it will immediately close the popup
@@ -291,15 +312,6 @@ export default function App() {
         </MapGL>
 
         <ControlPanel />
-
-        {/* <ControlPanel
-          startTime={timeRange[0]}
-          endTime={timeRange[1]}
-          selectedTime={selectedTime}
-          allDays={allDays}
-          onChangeTime={selectTime}
-          onChangeAllDays={useAllDays}
-        /> */}
       </div>
     </>
   );
