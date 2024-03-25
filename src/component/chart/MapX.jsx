@@ -220,7 +220,7 @@ export default function App() {
     //   : filterFeaturesByDay(earthquakes, selectedTime);
   }, [earthquakes, allDays, selectedTime]);
 
-  console.log(data.features[0]);
+  console.log(earthquakes);
 
   const pins = useMemo(
     () =>
