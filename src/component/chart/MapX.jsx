@@ -130,7 +130,6 @@
 
 import React, { useRef, useEffect } from "react";
 import mapboxgl from "mapbox-gl";
-import "@mapbox/mapbox-gl-heatmap";
 
 mapboxgl.accessToken =
   "pk.eyJ1IjoibWVuZHNhbGJlcnQiLCJhIjoiY2x1NjloMmh2MDZjdDJrbXUzajQ2cW96dyJ9.DlO7KoEVjfnmCSKLSAPUjQ";
