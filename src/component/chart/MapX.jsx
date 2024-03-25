@@ -130,7 +130,7 @@
 import * as React from "react";
 import { useState, useMemo } from "react";
 import { createRoot } from "react-dom/client";
-import Map, {
+import MapGL, {
   Marker,
   Popup,
   NavigationControl,
@@ -178,7 +178,7 @@ function MapX() {
       // className="w-screen"
       // className="w-screen h-screen rounded-lg border border-[#E2E8F0] overflow-hidden"
       >
-        <Map
+        <MapGL
           initialViewState={{
             latitude: 40,
             longitude: -100,
@@ -210,7 +210,7 @@ function MapX() {
               <img width="100%" src={popupInfo.image} />
             </Popup>
           )}
-        </Map>
+        </MapGL>
 
         {/* <ControlPanel /> */}
       </div>
