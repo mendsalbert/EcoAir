@@ -247,9 +247,7 @@ export default function App() {
           }
           mapStyle="mapbox://styles/mapbox/dark-v9"
           mapboxAccessToken={MAPBOX_TOKEN}
-          onClick={() => {
-            alert("fdsf");
-          }} // Register click event handler
+          onClick={handleClick} // Register click event handler
         >
           {data && (
             <Source type="geojson" data={data}>
