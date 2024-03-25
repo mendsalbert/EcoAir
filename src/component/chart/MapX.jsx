@@ -147,7 +147,7 @@ import CITIES from "./cities.json";
 const TOKEN =
   "pk.eyJ1IjoibWVuZHNhbGJlcnQiLCJhIjoiY2x1NjloMmh2MDZjdDJrbXUzajQ2cW96dyJ9.DlO7KoEVjfnmCSKLSAPUjQ";
 
-export default function App() {
+function Map() {
   const [popupInfo, setPopupInfo] = useState(null);
 
   console.log(CITIES);
@@ -196,7 +196,7 @@ export default function App() {
 
           {pins}
 
-          {/* {popupInfo && (
+          {popupInfo && (
             <Popup
               anchor="top"
               longitude={Number(popupInfo.longitude)}
@@ -214,7 +214,7 @@ export default function App() {
               </div>
               <img width="100%" src={popupInfo.image} />
             </Popup>
-          )} */}
+          )}
         </Map>
 
         {/* <ControlPanel /> */}
@@ -223,6 +223,4 @@ export default function App() {
   );
 }
 
-export function renderToDom(container) {
-  createRoot(container).render(<App />);
-}
+export default Map;
