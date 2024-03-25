@@ -189,11 +189,6 @@ function MapX() {
           mapStyle="mapbox://styles/mapbox/dark-v9"
           mapboxAccessToken={TOKEN}
         >
-          <GeolocateControl position="top-left" />
-          <FullscreenControl position="top-left" />
-          <NavigationControl position="top-left" />
-          <ScaleControl />
-
           {pins}
 
           {popupInfo && (
