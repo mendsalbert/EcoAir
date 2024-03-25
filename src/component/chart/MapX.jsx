@@ -193,7 +193,6 @@ export default function App() {
           <ScaleControl />
 
           {pins}
-
           {popupInfo && (
             <Popup
               anchor="top"
