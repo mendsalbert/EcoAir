@@ -209,6 +209,7 @@ export default function App() {
     //   : filterFeaturesByDay(earthquakes, selectedTime);
   }, [earthquakes, allDays, selectedTime]);
 
+  console.log(data);
   return (
     <>
       <div className="w-screen h-screen rounded-lg border border-[#E2E8F0] overflow-hidden">
