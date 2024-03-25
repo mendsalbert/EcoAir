@@ -196,7 +196,7 @@ export default function App() {
             longitude={-122.4}
             latitude={37.8}
             color="red"
-            popup={popup}
+            // popup={popup}
             ref={markerRef}
           />
 
