@@ -139,10 +139,10 @@ import Map, {
   GeolocateControl,
 } from "react-map-gl";
 
-import ControlPanel from "./control-panel";
-import Pin from "./pin";
+import ControlPanel from "./ControlPanel";
+import Pin from "./Pin";
 
-import CITIES from "../../.data/cities.json";
+import CITIES from "./cities.json";
 
 const TOKEN = ""; // Set your mapbox token here
 
