@@ -173,9 +173,16 @@ export default function App() {
 
   return (
     <>
-      {/* <div className="w-screen h-screen "> */}
       <Map
-        initialViewState={{}}
+        initialViewState={
+          {
+            //   latitude: 40,
+            //   longitude: -100,
+            //   zoom: 3.5,
+            //   bearing: 0,
+            //   pitch: 0,
+          }
+        }
         mapStyle="mapbox://styles/mapbox/dark-v9"
         mapboxAccessToken={TOKEN}
       >
@@ -208,7 +215,6 @@ export default function App() {
       </Map>
 
       <ControlPanel />
-      {/* </div> */}
     </>
   );
 }
