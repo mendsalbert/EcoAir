@@ -181,7 +181,29 @@ export default function App() {
   }, []);
 
   const data = useMemo(() => {
-    return earthquakes;
+    const geoJsonData = {
+      type: "FeatureCollection",
+      features: earthquakes.map((location) => ({
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [
+            location.coordinates.longitude,
+            location.coordinates.latitude,
+          ],
+        },
+        properties: {
+          felt: null, // If you have relevant data, replace null with that data
+          id: location.id.toString(),
+          mag: location.sensors.length, // Or another meaningful number from your data
+          time: new Date(location.datetimeLast.utc).getTime(),
+          tsunami: 0, // If you have relevant data, replace 0 with that data
+          // ... Any other properties you want to include
+        },
+      })),
+    };
+
+    return geoJsonData;
     // return allDays
     //   ? earthquakes
     //   : filterFeaturesByDay(earthquakes, selectedTime);
