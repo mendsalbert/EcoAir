@@ -145,7 +145,7 @@ import Pin from "./Pin";
 import CITIES from "./cities.json";
 
 const TOKEN =
-  "pk.eyJ1IjoibWVuZHNhbGJlcnQiLCJhIjoiY2x1NjloMmh2MDZjdDJrbXUzajQ2cW96dyJ9.DlO7KoEVjfnmCSKLSAPUjQ";
+  "pk.eyJ1IjoibWVuZHNhbGJlcnQiLCJhIjoiY2x1NzM1bnhmMDFpZjJybnNlc3ZidW00ZSJ9.BeHOtgPK01EsZHFR5kxP0w";
 export default function App() {
   const [popupInfo, setPopupInfo] = useState(null);
 
