@@ -147,7 +147,7 @@ import CITIES from "./cities.json";
 const TOKEN =
   "pk.eyJ1IjoibWVuZHNhbGJlcnQiLCJhIjoiY2x1NjloMmh2MDZjdDJrbXUzajQ2cW96dyJ9.DlO7KoEVjfnmCSKLSAPUjQ";
 
-function Map() {
+function MapX() {
   const [popupInfo, setPopupInfo] = useState(null);
 
   console.log(CITIES);
@@ -223,4 +223,4 @@ function Map() {
   );
 }
 
-export default Map;
+export default MapX;
