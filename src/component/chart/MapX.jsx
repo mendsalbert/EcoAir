@@ -215,7 +215,7 @@ export default function App() {
           )}
         </Map>
 
-        {/* <ControlPanel /> */}
+        <ControlPanel />
       </div>
     </>
   );
