@@ -150,7 +150,6 @@ const TOKEN =
 
 export default function App() {
   const [popupInfo, setPopupInfo] = useState(null);
-
   const pins = useMemo(
     () =>
       CITIES.map((city, index) => (
@@ -193,13 +192,7 @@ export default function App() {
           <NavigationControl position="top-left" />
           <ScaleControl />
 
-          {/* {pins} */}
-          <Marker
-            longitude={-122.4}
-            latitude={37.8}
-            color="red"
-            anchor="bottom"
-          />
+          {pins}
 
           {popupInfo && (
             <Popup
