@@ -187,22 +187,23 @@ export default function App() {
 
   return (
     <>
-      <MapGL
-        initialViewState={{
-          latitude: 40,
-          longitude: -100,
-          zoom: 3,
-        }}
-        mapStyle="mapbox://styles/mapbox/dark-v9"
-        mapboxAccessToken={MAPBOX_TOKEN}
-      >
-        {data && (
-          <Source type="geojson" data={data}>
-            <Layer {...heatmapLayer} />
-          </Source>
-        )}
-      </MapGL>
-      {/* <ControlPanel
+      <div className="w-full h-screen rounded-lg border border-[#E2E8F0] overflow-hidden">
+        <MapGL
+          initialViewState={{
+            latitude: 40,
+            longitude: -100,
+            zoom: 3,
+          }}
+          mapStyle="mapbox://styles/mapbox/dark-v9"
+          mapboxAccessToken={MAPBOX_TOKEN}
+        >
+          {data && (
+            <Source type="geojson" data={data}>
+              <Layer {...heatmapLayer} />
+            </Source>
+          )}
+        </MapGL>
+        {/* <ControlPanel
         startTime={timeRange[0]}
         endTime={timeRange[1]}
         selectedTime={selectedTime}
@@ -210,6 +211,7 @@ export default function App() {
         onChangeTime={selectTime}
         onChangeAllDays={useAllDays}
       /> */}
+      </div>
     </>
   );
 }
