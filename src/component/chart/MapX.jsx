@@ -192,9 +192,13 @@ export default function App() {
           <ScaleControl />
 
           {/* {pins} */}
-          <Marker longitude={-100} latitude={40} anchor="bottom">
-            <Pin />
-          </Marker>
+          <Marker
+            ongitude={-122.4}
+            latitude={37.8}
+            color="red"
+            anchor="bottom"
+          />
+
           {popupInfo && (
             <Popup
               anchor="top"
