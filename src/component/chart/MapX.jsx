@@ -193,8 +193,7 @@ export default function App() {
 
           {/* {pins} */}
           <Marker longitude={-122.4} latitude={37.8}>
-            <Pin />{" "}
-            {/* Ensure your Pin component correctly displays a marker */}
+            <Pin />
           </Marker>
 
           {popupInfo && (
