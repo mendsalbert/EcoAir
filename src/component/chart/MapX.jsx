@@ -145,6 +145,7 @@ import MapGL, {
 // import {heatmapLayer} from './map-style';
 import { heatmapLayer } from "./MapStyle";
 import ControlPanel from "./ControlPanel";
+import CITIES from "./cities.json";
 
 const MAPBOX_TOKEN =
   "pk.eyJ1IjoibWVuZHNhbGJlcnQiLCJhIjoiY2x1NjloMmh2MDZjdDJrbXUzajQ2cW96dyJ9.DlO7KoEVjfnmCSKLSAPUjQ"; // Set your mapbox token here
