@@ -212,28 +212,6 @@ export default function App() {
 
   console.log(data);
 
-  const handleClick = (event) => {
-    // You can access the features that were under the click event.
-    // The features will depend on where you click on the map.
-    const features = event.features;
-
-    // If features are present and we clicked on our heatmap points
-    if (
-      features &&
-      features[0] &&
-      features[0].layer.id === "your-heatmap-layer-id"
-    ) {
-      // Extract information from the feature
-      const feature = features[0];
-
-      // Set popup info based on clicked feature properties
-      setPopupInfo({
-        longitude: feature.geometry.coordinates[0],
-        latitude: feature.geometry.coordinates[1],
-        // Any other information from feature.properties that you want to display
-      });
-    }
-  };
   return (
     <>
       <div className="w-screen h-screen rounded-lg border border-[#E2E8F0] overflow-hidden">
@@ -247,7 +225,6 @@ export default function App() {
           }
           mapStyle="mapbox://styles/mapbox/dark-v9"
           mapboxAccessToken={MAPBOX_TOKEN}
-          onClick={handleClick} // Register click event handler
         >
           {data && (
             <Source type="geojson" data={data}>
@@ -255,20 +232,7 @@ export default function App() {
             </Source>
           )}
         </MapGL>
-        {popupInfo &&
-          //   <Popup
-          //     latitude={popupInfo.latitude}
-          //     longitude={popupInfo.longitude}
-          //     closeButton={true}
-          //     closeOnClick={false}
-          //     onClose={() => setPopupInfo(null)}
-          //     anchor="top"
-          //   >
-          //     <div>
-          //       {/* Render your popup content here using popupInfo */}
-          //     </div>
-          //   </Popup>
-          console.log("======pop up======")}
+
         {/* <ControlPanel
           startTime={timeRange[0]}
           endTime={timeRange[1]}
