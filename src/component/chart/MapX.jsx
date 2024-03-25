@@ -192,13 +192,10 @@ export default function App() {
           <ScaleControl />
 
           {/* {pins} */}
-          <Marker
-            longitude={-122.4}
-            latitude={37.8}
-            color="red"
-            // popup={popup}
-            // ref={markerRef}
-          />
+          <Marker longitude={-122.4} latitude={37.8}>
+            <Pin />{" "}
+            {/* Ensure your Pin component correctly displays a marker */}
+          </Marker>
 
           {popupInfo && (
             <Popup
