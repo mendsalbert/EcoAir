@@ -149,6 +149,7 @@ const TOKEN = ""; // Set your mapbox token here
 export default function App() {
   const [popupInfo, setPopupInfo] = useState(null);
 
+  console.log(CITIES);
   const pins = useMemo(
     () =>
       CITIES.map((city, index) => (
