@@ -268,7 +268,7 @@ export default function App() {
           //       {/* Render your popup content here using popupInfo */}
           //     </div>
           //   </Popup>
-          alert("pop up")}
+          console.log("======pop up======")}
         {/* <ControlPanel
           startTime={timeRange[0]}
           endTime={timeRange[1]}
