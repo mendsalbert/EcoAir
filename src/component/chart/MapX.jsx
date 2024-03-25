@@ -127,109 +127,92 @@
 // }
 
 // export default Map;
-
-import React, { useState } from "react";
+import * as React from "react";
+import { useState, useEffect, useMemo } from "react";
+import { createRoot } from "react-dom/client";
 import MapGL, { Source, Layer } from "react-map-gl";
-import "mapbox-gl/dist/mapbox-gl.css";
+// import ControlPanel from './control-panel';
+// import {heatmapLayer} from './map-style';
+import ControlPanel from "./MapControlPanel";
+import { heatmapLayer } from "./MapStyle";
 
-const MapWithHeatmap = () => {
-  const [viewport, setViewport] = useState({
-    latitude: 50.061,
-    longitude: 19.938,
-    zoom: 6,
+const MAPBOX_TOKEN = ""; // Set your mapbox token here
+
+function filterFeaturesByDay(featureCollection, time) {
+  const date = new Date(time);
+  const year = date.getFullYear();
+  const month = date.getMonth();
+  const day = date.getDate();
+  const features = featureCollection.features.filter((feature) => {
+    const featureDate = new Date(feature.properties.time);
+    return (
+      featureDate.getFullYear() === year &&
+      featureDate.getMonth() === month &&
+      featureDate.getDate() === day
+    );
   });
+  return { type: "FeatureCollection", features };
+}
 
-  // Your heatmap data points
-  const data = {
-    type: "FeatureCollection",
-    features: [
-      // Replace this with your actual data points
-      {
-        type: "Feature",
-        properties: { value: 1 },
-        geometry: { type: "Point", coordinates: [19.938, 50.061] },
-      },
-      // ... more data points
-    ],
-  };
+export default function App() {
+  const [allDays, useAllDays] = useState(true);
+  const [timeRange, setTimeRange] = useState([0, 0]);
+  const [selectedTime, selectTime] = useState(0);
+  const [earthquakes, setEarthQuakes] = useState(null);
 
-  // Heatmap layer style
-  const heatmapLayer = {
-    id: "heatmapLayer",
-    type: "heatmap",
-    maxzoom: 9,
-    paint: {
-      // Increase the heatmap weight based on frequency and property magnitude
-      "heatmap-weight": {
-        property: "value",
-        type: "exponential",
-        stops: [
-          [0, 0],
-          [6, 1],
-        ],
-      },
-      // Increase the heatmap color weight weight by zoom level
-      // heatmap-intensity is a multiplier on top of heatmap-weight
-      "heatmap-intensity": {
-        stops: [
-          [0, 1],
-          [9, 3],
-        ],
-      },
-      // Color ramp for heatmap.  Domain is 0 (low) to 1 (high).
-      // Begin color ramp at 0-stop with a 0-transparency color
-      // to create a blur-like effect.
-      "heatmap-color": [
-        "interpolate",
-        ["linear"],
-        ["heatmap-density"],
-        0,
-        "rgba(33,102,172,0)",
-        0.2,
-        "blue",
-        0.4,
-        "cyan",
-        0.6,
-        "lime",
-        0.8,
-        "yellow",
-        1,
-        "red",
-      ],
-      // Adjust the heatmap radius by zoom level
-      "heatmap-radius": {
-        stops: [
-          [0, 2],
-          [9, 20],
-        ],
-      },
-      // Transition from heatmap to circle layer by zoom level
-      "heatmap-opacity": {
-        default: 1,
-        stops: [
-          [7, 1],
-          [9, 0],
-        ],
-      },
-    },
-  };
+  useEffect(() => {
+    /* global fetch */
+    fetch("https://docs.mapbox.com/mapbox-gl-js/assets/earthquakes.geojson")
+      .then((resp) => resp.json())
+      .then((json) => {
+        // Note: In a real application you would do a validation of JSON data before doing anything with it,
+        // but for demonstration purposes we ingore this part here and just trying to select needed data...
+        const features = json.features;
+        const endTime = features[0].properties.time;
+        const startTime = features[features.length - 1].properties.time;
+
+        setTimeRange([startTime, endTime]);
+        setEarthQuakes(json);
+        selectTime(endTime);
+      })
+      .catch((err) => console.error("Could not load data", err)); // eslint-disable-line
+  }, []);
+
+  const data = useMemo(() => {
+    return allDays
+      ? earthquakes
+      : filterFeaturesByDay(earthquakes, selectedTime);
+  }, [earthquakes, allDays, selectedTime]);
 
   return (
-    <MapGL
-      {...viewport}
-      width="100%"
-      height="100vh"
-      mapStyle="mapbox://styles/mapbox/light-v10"
-      onViewportChange={setViewport}
-      mapboxApiAccessToken={
-        "pk.eyJ1IjoibWVuZHNhbGJlcnQiLCJhIjoiY2x1NjloMmh2MDZjdDJrbXUzajQ2cW96dyJ9.DlO7KoEVjfnmCSKLSAPUjQ"
-      } // Set your mapbox token here
-    >
-      <Source type="geojson" data={data}>
-        <Layer {...heatmapLayer} />
-      </Source>
-    </MapGL>
+    <>
+      <MapGL
+        initialViewState={{
+          latitude: 40,
+          longitude: -100,
+          zoom: 3,
+        }}
+        mapStyle="mapbox://styles/mapbox/dark-v9"
+        mapboxAccessToken={MAPBOX_TOKEN}
+      >
+        {data && (
+          <Source type="geojson" data={data}>
+            <Layer {...heatmapLayer} />
+          </Source>
+        )}
+      </MapGL>
+      <ControlPanel
+        startTime={timeRange[0]}
+        endTime={timeRange[1]}
+        selectedTime={selectedTime}
+        allDays={allDays}
+        onChangeTime={selectTime}
+        onChangeAllDays={useAllDays}
+      />
+    </>
   );
-};
+}
 
-export default MapWithHeatmap;
+export function renderToDom(container) {
+  createRoot(container).render(<App />);
+}
