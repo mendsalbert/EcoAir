@@ -128,85 +128,108 @@
 
 // export default Map;
 
-import React, { useRef, useEffect } from "react";
-import mapboxgl from "mapbox-gl";
-
-mapboxgl.accessToken =
-  "pk.eyJ1IjoibWVuZHNhbGJlcnQiLCJhIjoiY2x1NjloMmh2MDZjdDJrbXUzajQ2cW96dyJ9.DlO7KoEVjfnmCSKLSAPUjQ";
+import React, { useState } from "react";
+import MapGL, { Source, Layer } from "react-map-gl";
+import "mapbox-gl/dist/mapbox-gl.css";
 
 const MapWithHeatmap = () => {
-  const mapContainerRef = useRef(null);
+  const [viewport, setViewport] = useState({
+    latitude: 50.061,
+    longitude: 19.938,
+    zoom: 6,
+  });
 
-  useEffect(() => {
-    const map = new mapboxgl.Map({
-      container: mapContainerRef.current,
-      style: "mapbox://styles/mapbox/streets-v11", // Or another style of your choice
-      center: [19.938, 50.061],
-      zoom: 6,
-    });
+  // Your heatmap data points
+  const data = {
+    type: "FeatureCollection",
+    features: [
+      // Replace this with your actual data points
+      {
+        type: "Feature",
+        properties: { value: 1 },
+        geometry: { type: "Point", coordinates: [19.938, 50.061] },
+      },
+      // ... more data points
+    ],
+  };
 
-    map.on("load", () => {
-      map.addSource("heatmap-source", {
-        type: "geojson",
-        data: {
-          type: "FeatureCollection",
-          features: [], // Your GeoJSON data goes here
-        },
-      });
+  // Heatmap layer style
+  const heatmapLayer = {
+    id: "heatmapLayer",
+    type: "heatmap",
+    maxzoom: 9,
+    paint: {
+      // Increase the heatmap weight based on frequency and property magnitude
+      "heatmap-weight": {
+        property: "value",
+        type: "exponential",
+        stops: [
+          [0, 0],
+          [6, 1],
+        ],
+      },
+      // Increase the heatmap color weight weight by zoom level
+      // heatmap-intensity is a multiplier on top of heatmap-weight
+      "heatmap-intensity": {
+        stops: [
+          [0, 1],
+          [9, 3],
+        ],
+      },
+      // Color ramp for heatmap.  Domain is 0 (low) to 1 (high).
+      // Begin color ramp at 0-stop with a 0-transparency color
+      // to create a blur-like effect.
+      "heatmap-color": [
+        "interpolate",
+        ["linear"],
+        ["heatmap-density"],
+        0,
+        "rgba(33,102,172,0)",
+        0.2,
+        "blue",
+        0.4,
+        "cyan",
+        0.6,
+        "lime",
+        0.8,
+        "yellow",
+        1,
+        "red",
+      ],
+      // Adjust the heatmap radius by zoom level
+      "heatmap-radius": {
+        stops: [
+          [0, 2],
+          [9, 20],
+        ],
+      },
+      // Transition from heatmap to circle layer by zoom level
+      "heatmap-opacity": {
+        default: 1,
+        stops: [
+          [7, 1],
+          [9, 0],
+        ],
+      },
+    },
+  };
 
-      map.addLayer({
-        id: "heatmap-layer",
-        type: "heatmap",
-        source: "heatmap-source",
-        paint: {
-          // Heatmap properties
-          "heatmap-weight": {
-            property: "magnitude",
-            type: "exponential",
-            stops: [
-              [0, 0],
-              [1, 1],
-            ],
-          },
-          "heatmap-intensity": {
-            stops: [
-              [11, 1],
-              [15, 3],
-            ],
-          },
-          "heatmap-color": [
-            "interpolate",
-            ["linear"],
-            ["heatmap-density"],
-            0,
-            "blue",
-            0.5,
-            "red",
-            1,
-            "white",
-          ],
-          "heatmap-radius": {
-            stops: [
-              [11, 15],
-              [15, 20],
-            ],
-          },
-          "heatmap-opacity": {
-            default: 1,
-            stops: [
-              [14, 1],
-              [15, 0],
-            ],
-          },
-        },
-      });
-    });
-
-    // Clean up on unmount
-    return () => map.remove();
-  }, []);
-
-  return <div ref={mapContainerRef} style={{ height: "100vh" }} />;
+  return (
+    <MapGL
+      {...viewport}
+      width="100%"
+      height="100vh"
+      mapStyle="mapbox://styles/mapbox/light-v10"
+      onViewportChange={setViewport}
+      mapboxApiAccessToken={
+        "pk.eyJ1IjoibWVuZHNhbGJlcnQiLCJhIjoiY2x1NjloMmh2MDZjdDJrbXUzajQ2cW96dyJ9.DlO7KoEVjfnmCSKLSAPUjQ"
+      } // Set your mapbox token here
+    >
+      <Source type="geojson" data={data}>
+        <Layer {...heatmapLayer} />
+      </Source>
+    </MapGL>
+  );
 };
 
 export default MapWithHeatmap;
