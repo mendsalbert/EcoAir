@@ -172,7 +172,7 @@ export default function App() {
 
   return (
     <>
-      <div>
+      <div className="w-screen h-screen rounded-lg border border-[#E2E8F0] overflow-hidden">
         <Map
           initialViewState={{
             latitude: 40,
