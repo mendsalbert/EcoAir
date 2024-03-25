@@ -159,7 +159,7 @@ export default function App() {
   const [allDays, useAllDays] = useState(true);
   const [timeRange, setTimeRange] = useState([0, 0]);
   const [selectedTime, selectTime] = useState(0);
-  const [earthquakes, setEarthQuakes] = useState(null);
+  const [earthquakes, setEarthQuakes] = useState([]);
 
   useEffect(() => {
     /* global fetch */
