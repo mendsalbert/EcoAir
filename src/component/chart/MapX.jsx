@@ -144,7 +144,8 @@ import Pin from "./Pin";
 
 import CITIES from "./cities.json";
 
-const TOKEN = ""; // Set your mapbox token here
+const TOKEN =
+  "pk.eyJ1IjoibWVuZHNhbGJlcnQiLCJhIjoiY2x1NjloMmh2MDZjdDJrbXUzajQ2cW96dyJ9.DlO7KoEVjfnmCSKLSAPUjQ";
 
 export default function App() {
   const [popupInfo, setPopupInfo] = useState(null);
