@@ -3,7 +3,7 @@ import React from "react";
 function MapLayout({ children }) {
   return (
     <main>
-      <div className="">{children}</div>
+      <div className="w-full">{children}</div>
     </main>
   );
 }
