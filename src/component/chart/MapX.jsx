@@ -190,26 +190,6 @@ function MapX() {
           mapboxAccessToken={TOKEN}
         >
           {pins}
-
-          {popupInfo && (
-            <Popup
-              anchor="top"
-              longitude={Number(popupInfo.longitude)}
-              latitude={Number(popupInfo.latitude)}
-              onClose={() => setPopupInfo(null)}
-            >
-              <div>
-                {popupInfo.city}, {popupInfo.state} |{" "}
-                <a
-                  target="_new"
-                  href={`http://en.wikipedia.org/w/index.php?title=Special:Search&search=${popupInfo.city}, ${popupInfo.state}`}
-                >
-                  Wikipedia
-                </a>
-              </div>
-              <img width="100%" src={popupInfo.image} />
-            </Popup>
-          )}
         </MapGL>
 
         {/* <ControlPanel /> */}
