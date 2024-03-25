@@ -192,7 +192,7 @@ export default function App() {
           <ScaleControl />
 
           {/* {pins} */}
-          <Marker longitude={-122.4} latitude={37.8}>
+          <Marker longitude={2.2945} latitude={48.8584} anchor="bottom">
             <Pin />
           </Marker>
 
