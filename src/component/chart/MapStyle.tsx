@@ -28,18 +28,19 @@ export const heatmapLayer: HeatmapLayer = {
       ["linear"],
       ["heatmap-density"],
       0,
-      "rgba(33,102,172,0)",
+      "rgba(255, 255, 255, 0)", // White, transparent (the lowest intensity)
       0.2,
-      "rgb(103,169,207)",
+      "rgb(176, 212, 243)", // Light blue
       0.4,
-      "rgb(209,229,240)",
+      "rgb(128, 186, 236)", // Blue
       0.6,
-      "rgb(253,219,199)",
+      "rgb(79, 155, 232)", // Strong blue
       0.8,
-      "rgb(239,138,98)",
-      0.9,
-      "rgb(255,201,101)",
+      "rgb(251, 128, 114)", // Red-orange
+      1,
+      "rgb(255, 200, 55)", // Orange (the highest intensity)
     ],
+
     // Adjust the heatmap radius by zoom level
     "heatmap-radius": [
       "interpolate",
