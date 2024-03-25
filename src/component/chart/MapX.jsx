@@ -128,7 +128,7 @@
 
 // export default Map;
 import * as React from "react";
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo } from "react";
 import { createRoot } from "react-dom/client";
 import Map, {
   Marker,
@@ -149,55 +149,27 @@ const TOKEN =
 
 export default function App() {
   const [popupInfo, setPopupInfo] = useState(null);
-  const [cities, setCities] = useState([]);
 
-  //   console.log(CITIES);
-  //   const pins = useMemo(
-  //     () =>
-  //       CITIES.map((city, index) => (
-  //         <Marker
-  //           key={`marker-${index}`}
-  //           longitude={city.longitude}
-  //           latitude={city.latitude}
-  //           anchor="bottom"
-  //           onClick={(e) => {
-  //             // If we let the click event propagates to the map, it will immediately close the popup
-  //             // with `closeOnClick: true`
-  //             e.originalEvent.stopPropagation();
-  //             setPopupInfo(city);
-  //           }}
-  //         >
-  //           <Pin />
-  //         </Marker>
-  //       )),
-  //     []
-  //   );
-
-  useEffect(() => {
-    // fetch your cities data and set it
-    fetchCitiesData().then((data) => {
-      setCities(data);
-    });
-  }, []);
-
-  const pins = useMemo(() => {
-    return cities.map((city, index) => (
-      <Marker
-        key={`marker-${index}`}
-        longitude={city.longitude}
-        latitude={city.latitude}
-        anchor="bottom"
-        onClick={(e) => {
-          // If we let the click event propagate to the map, it will immediately close the popup
-          // with `closeOnClick: true`
-          e.originalEvent.stopPropagation();
-          setPopupInfo(city);
-        }}
-      >
-        <Pin />
-      </Marker>
-    ));
-  }, [cities]);
+  const pins = useMemo(
+    () =>
+      CITIES.map((city, index) => (
+        <Marker
+          key={`marker-${index}`}
+          longitude={city.longitude}
+          latitude={city.latitude}
+          anchor="bottom"
+          onClick={(e) => {
+            // If we let the click event propagates to the map, it will immediately close the popup
+            // with `closeOnClick: true`
+            e.originalEvent.stopPropagation();
+            setPopupInfo(city);
+          }}
+        >
+          <Pin />
+        </Marker>
+      )),
+    []
+  );
 
   return (
     <>
