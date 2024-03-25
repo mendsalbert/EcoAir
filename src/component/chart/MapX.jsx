@@ -376,13 +376,11 @@ export default function App() {
     <>
       <div className="w-screen h-screen rounded-lg border border-[#E2E8F0] overflow-hidden">
         <MapGL
-          initialViewState={
-            {
-              // latitude: 40,
-              // longitude: -100,
-              // zoom: 3,
-            }
-          }
+          initialViewState={{
+            latitude: 40,
+            longitude: -100,
+            zoom: 3,
+          }}
           mapStyle="mapbox://styles/mapbox/dark-v9"
           mapboxAccessToken={MAPBOX_TOKEN}
         >
