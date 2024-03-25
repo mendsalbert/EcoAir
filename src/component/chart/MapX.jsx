@@ -191,10 +191,10 @@ export default function App() {
           mapStyle="mapbox://styles/mapbox/dark-v9"
           mapboxAccessToken={TOKEN}
         >
-          {/* <GeolocateControl position="top-left" />
+          <GeolocateControl position="top-left" />
           <FullscreenControl position="top-left" />
           <NavigationControl position="top-left" />
-          <ScaleControl /> */}
+          <ScaleControl />
 
           {pins}
 
@@ -219,7 +219,7 @@ export default function App() {
           )}
         </Map>
 
-        <ControlPanel />
+        {/* <ControlPanel /> */}
       </div>
     </>
   );
