@@ -130,6 +130,7 @@
 import * as React from "react";
 import { useState, useEffect, useMemo } from "react";
 import { createRoot } from "react-dom/client";
+import Pin from "./Pin";
 import MapGL, {
   Source,
   Layer,
