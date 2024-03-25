@@ -144,12 +144,11 @@ import Pin from "./Pin";
 
 import CITIES from "./cities.json";
 
-// const TOKEN = "pk.eyJ1IjoibWVuZHNhbGJlcnQiLCJhIjoiY2x1NzM1bnhmMDFpZjJybnNlc3ZidW00ZSJ9.BeHOtgPK01EsZHFR5kxP0w"
-const TOKEN =
-  "pk.eyJ1IjoibWVuZHNhbGJlcnQiLCJhIjoiY2x1NzM1bnhmMDFpZjJybnNlc3ZidW00ZSJ9.BeHOtgPK01EsZHFR5kxP0w";
+const TOKEN = ""; // Set your mapbox token here
 
 export default function App() {
   const [popupInfo, setPopupInfo] = useState(null);
+
   const pins = useMemo(
     () =>
       CITIES.map((city, index) => (
@@ -173,49 +172,46 @@ export default function App() {
 
   return (
     <>
-      <div className="w-screen h-screen rounded-lg border border-[#E2E8F0] overflow-hidden">
-        <Map
-          initialViewState={
-            {
-              // latitude: 40,
-              // longitude: -100,
-              // zoom: 3.5,
-              // bearing: 0,
-              // pitch: 0,
-            }
-          }
-          mapStyle="mapbox://styles/mapbox/dark-v9"
-          mapboxAccessToken={TOKEN}
-        >
-          <GeolocateControl position="top-left" />
-          <FullscreenControl position="top-left" />
-          <NavigationControl position="top-left" />
-          <ScaleControl />
+      <Map
+        initialViewState={{
+          latitude: 40,
+          longitude: -100,
+          zoom: 3.5,
+          bearing: 0,
+          pitch: 0,
+        }}
+        mapStyle="mapbox://styles/mapbox/dark-v9"
+        mapboxAccessToken={TOKEN}
+      >
+        <GeolocateControl position="top-left" />
+        <FullscreenControl position="top-left" />
+        <NavigationControl position="top-left" />
+        <ScaleControl />
 
-          {pins}
-          {popupInfo && (
-            <Popup
-              anchor="top"
-              longitude={Number(popupInfo.longitude)}
-              latitude={Number(popupInfo.latitude)}
-              onClose={() => setPopupInfo(null)}
-            >
-              <div>
-                {popupInfo.city}, {popupInfo.state} |{" "}
-                <a
-                  target="_new"
-                  href={`http://en.wikipedia.org/w/index.php?title=Special:Search&search=${popupInfo.city}, ${popupInfo.state}`}
-                >
-                  Wikipedia
-                </a>
-              </div>
-              <img width="100%" src={popupInfo.image} />
-            </Popup>
-          )}
-        </Map>
-        <p>dfsf</p>
-        <ControlPanel />
-      </div>
+        {pins}
+
+        {popupInfo && (
+          <Popup
+            anchor="top"
+            longitude={Number(popupInfo.longitude)}
+            latitude={Number(popupInfo.latitude)}
+            onClose={() => setPopupInfo(null)}
+          >
+            <div>
+              {popupInfo.city}, {popupInfo.state} |{" "}
+              <a
+                target="_new"
+                href={`http://en.wikipedia.org/w/index.php?title=Special:Search&search=${popupInfo.city}, ${popupInfo.state}`}
+              >
+                Wikipedia
+              </a>
+            </div>
+            <img width="100%" src={popupInfo.image} />
+          </Popup>
+        )}
+      </Map>
+
+      <ControlPanel />
     </>
   );
 }
