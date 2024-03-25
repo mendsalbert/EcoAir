@@ -189,8 +189,10 @@ export default function App() {
           <NavigationControl position="top-left" />
           <ScaleControl />
 
-          {pins}
-
+          {/* {pins} */}
+          <Marker longitude={-100} latitude={40} anchor="bottom">
+            <Pin />
+          </Marker>
           {popupInfo && (
             <Popup
               anchor="top"
