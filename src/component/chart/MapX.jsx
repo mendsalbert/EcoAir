@@ -374,7 +374,9 @@ export default function App() {
   );
   return (
     <>
-      <div className="w-screen h-screen rounded-lg border border-[#E2E8F0] overflow-hidden">
+      <div
+      //   className="w-screen h-screen rounded-lg border border-[#E2E8F0] overflow-hidden"
+      >
         <MapGL
           initialViewState={
             {
@@ -397,7 +399,7 @@ export default function App() {
           <NavigationControl position="top-left" />
           <ScaleControl />
 
-          {/* {pins} */}
+          {pins}
 
           {popupInfo && (
             <Popup
