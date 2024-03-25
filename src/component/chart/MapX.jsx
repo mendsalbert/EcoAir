@@ -206,14 +206,14 @@ export default function App() {
             </Source>
           )}
         </MapGL>
-        {/* <ControlPanel
-        startTime={timeRange[0]}
-        endTime={timeRange[1]}
-        selectedTime={selectedTime}
-        allDays={allDays}
-        onChangeTime={selectTime}
-        onChangeAllDays={useAllDays}
-      /> */}
+        <ControlPanel
+          startTime={timeRange[0]}
+          endTime={timeRange[1]}
+          selectedTime={selectedTime}
+          allDays={allDays}
+          onChangeTime={selectTime}
+          onChangeAllDays={useAllDays}
+        />
       </div>
     </>
   );
