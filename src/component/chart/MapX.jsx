@@ -146,19 +146,58 @@ const MapWithHeatmap = () => {
     });
 
     map.on("load", () => {
-      // Add heatmap here
-      map.addLayer({
-        id: "heatmapLayer",
-        type: "heatmap",
-        source: {
-          type: "geojson",
-          data: {
-            type: "FeatureCollection",
-            features: [], // Add your features here
-          },
+      map.addSource("heatmap-source", {
+        type: "geojson",
+        data: {
+          type: "FeatureCollection",
+          features: [], // Your GeoJSON data goes here
         },
+      });
+
+      map.addLayer({
+        id: "heatmap-layer",
+        type: "heatmap",
+        source: "heatmap-source",
         paint: {
           // Heatmap properties
+          "heatmap-weight": {
+            property: "magnitude",
+            type: "exponential",
+            stops: [
+              [0, 0],
+              [1, 1],
+            ],
+          },
+          "heatmap-intensity": {
+            stops: [
+              [11, 1],
+              [15, 3],
+            ],
+          },
+          "heatmap-color": [
+            "interpolate",
+            ["linear"],
+            ["heatmap-density"],
+            0,
+            "blue",
+            0.5,
+            "red",
+            1,
+            "white",
+          ],
+          "heatmap-radius": {
+            stops: [
+              [11, 15],
+              [15, 20],
+            ],
+          },
+          "heatmap-opacity": {
+            default: 1,
+            stops: [
+              [14, 1],
+              [15, 0],
+            ],
+          },
         },
       });
     });
