@@ -173,42 +173,42 @@ export default function App() {
 
   return (
     <>
-      <div className="w-screen h-screen ">
-        <Map
-          initialViewState={{}}
-          mapStyle="mapbox://styles/mapbox/dark-v9"
-          mapboxAccessToken={TOKEN}
-        >
-          <GeolocateControl position="top-left" />
-          <FullscreenControl position="top-left" />
-          <NavigationControl position="top-left" />
-          <ScaleControl />
+      {/* <div className="w-screen h-screen "> */}
+      <Map
+        initialViewState={{}}
+        mapStyle="mapbox://styles/mapbox/dark-v9"
+        mapboxAccessToken={TOKEN}
+      >
+        <GeolocateControl position="top-left" />
+        <FullscreenControl position="top-left" />
+        <NavigationControl position="top-left" />
+        <ScaleControl />
 
-          {pins}
+        {pins}
 
-          {popupInfo && (
-            <Popup
-              anchor="top"
-              longitude={Number(popupInfo.longitude)}
-              latitude={Number(popupInfo.latitude)}
-              onClose={() => setPopupInfo(null)}
-            >
-              <div>
-                {popupInfo.city}, {popupInfo.state} |{" "}
-                <a
-                  target="_new"
-                  href={`http://en.wikipedia.org/w/index.php?title=Special:Search&search=${popupInfo.city}, ${popupInfo.state}`}
-                >
-                  Wikipedia
-                </a>
-              </div>
-              <img width="100%" src={popupInfo.image} />
-            </Popup>
-          )}
-        </Map>
+        {popupInfo && (
+          <Popup
+            anchor="top"
+            longitude={Number(popupInfo.longitude)}
+            latitude={Number(popupInfo.latitude)}
+            onClose={() => setPopupInfo(null)}
+          >
+            <div>
+              {popupInfo.city}, {popupInfo.state} |{" "}
+              <a
+                target="_new"
+                href={`http://en.wikipedia.org/w/index.php?title=Special:Search&search=${popupInfo.city}, ${popupInfo.state}`}
+              >
+                Wikipedia
+              </a>
+            </div>
+            <img width="100%" src={popupInfo.image} />
+          </Popup>
+        )}
+      </Map>
 
-        <ControlPanel />
-      </div>
+      <ControlPanel />
+      {/* </div> */}
     </>
   );
 }
