@@ -221,6 +221,26 @@ export default function App() {
 
   console.log(data);
 
+  const pins = useMemo(
+    () =>
+      data.features.map((city, index) => (
+        <Marker
+          key={`marker-${index}`}
+          longitude={city.longitude}
+          latitude={city.latitude}
+          anchor="bottom"
+          onClick={(e) => {
+            // If we let the click event propagates to the map, it will immediately close the popup
+            // with `closeOnClick: true`
+            e.originalEvent.stopPropagation();
+            setPopupInfo(city);
+          }}
+        >
+          <Pin />
+        </Marker>
+      )),
+    []
+  );
   return (
     <>
       <div className="w-screen h-screen rounded-lg border border-[#E2E8F0] overflow-hidden">
@@ -241,26 +261,27 @@ export default function App() {
             </Source>
           )}
 
-          {
-            // Add markers on top of the heatmap
-            data.features.map((feature, index) => (
-              <Marker
-                key={index}
-                latitude={feature.geometry.coordinates[1]}
-                longitude={feature.geometry.coordinates[0]}
-              >
-                <div
-                  className="marker"
-                  onClick={() => {
-                    // Handler for marker click event
-                    console.log("Marker clicked!", feature);
-                  }}
+          {pins}
+
+          {popupInfo && (
+            <Popup
+              anchor="top"
+              longitude={Number(popupInfo.longitude)}
+              latitude={Number(popupInfo.latitude)}
+              onClose={() => setPopupInfo(null)}
+            >
+              <div>
+                {popupInfo.city}, {popupInfo.state} |{" "}
+                <a
+                  target="_new"
+                  href={`http://en.wikipedia.org/w/index.php?title=Special:Search&search=${popupInfo.city}, ${popupInfo.state}`}
                 >
-                  {/* Custom marker content */}
-                </div>
-              </Marker>
-            ))
-          }
+                  Wikipedia
+                </a>
+              </div>
+              <img width="100%" src={popupInfo.image} />
+            </Popup>
+          )}
         </MapGL>
 
         {/* <ControlPanel
