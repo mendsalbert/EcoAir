@@ -58,7 +58,7 @@ function TotalWidget() {
           totalEarnImg={totalEarn1}
           memberImg={memberImg}
           title="Locations"
-          amount={locations.length > 0 ? locations.length : 0}
+          amount={locations.length > 0 ? locations.length : <Spinner />}
           groth="+2.5%"
           id="totalEarn"
           isPrev={true}
@@ -68,7 +68,7 @@ function TotalWidget() {
           totalEarnImg={totalEarn2}
           memberImg={memberImg}
           title="Paremeters"
-          amount={<Spinner />}
+          amount={parameters.length > 0 ? parameters.length : <Spinner />}
           groth="PM10,PM2.5,O₃ mass.."
           id="totalEarn"
           isPrev={false}
