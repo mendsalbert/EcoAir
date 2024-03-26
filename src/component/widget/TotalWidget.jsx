@@ -67,7 +67,7 @@ function TotalWidget() {
           totalEarnImg={totalEarn2}
           memberImg={memberImg}
           title="Paremeters"
-          amount="410"
+          amount={parameters.length > 0 ? parameters.length : 0}
           groth="PM10,PM2.5,O₃ mass.."
           id="totalEarn"
           isPrev={false}
