@@ -7,7 +7,7 @@ import totalEarn4 from "/public/static/images/icons/total-earn-4.svg";
 import totalEarn5 from "/public/static/images/icons/total-earn-5.svg";
 import memberImg from "/public/static/images/avatar/members-2.png";
 import TotalWidgetCard from "./TotalWidgetCard";
-import Spinner from '../../component/spinner/index'
+import Spinner from "../../component/spinner/index";
 function TotalWidget() {
   const [locations, setLocations] = useState([]);
   const [parameters, setParameters] = useState([]);
@@ -67,9 +67,7 @@ function TotalWidget() {
           totalEarnImg={totalEarn2}
           memberImg={memberImg}
           title="Paremeters"
-          amount={
-            
-          }
+          amount={<Spinner />}
           groth="PM10,PM2.5,O₃ mass.."
           id="totalEarn"
           isPrev={false}
