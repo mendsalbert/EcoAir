@@ -19,3 +19,5 @@ function Spinner() {
     </svg>
   );
 }
+
+export default Spinner;
