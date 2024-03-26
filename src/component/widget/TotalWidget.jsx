@@ -68,9 +68,7 @@ function TotalWidget() {
           memberImg={memberImg}
           title="Paremeters"
           amount={
-            <svg class="animate-spin h-5 w-5 mr-3 ..." viewBox="0 0 24 24">
-              {" "}
-            </svg>
+            <svg class="animate-spin h-5 w-5 mr-3 " viewBox="0 0 24 24" />
           }
           groth="PM10,PM2.5,O₃ mass.."
           id="totalEarn"
