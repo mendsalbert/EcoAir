@@ -378,7 +378,7 @@ export default function App() {
         <MapGL
           initialViewState={{
             //   latitude: 40,
-            //   longitude: -100,
+            longitude: -100,
             zoom: 3,
           }}
           mapStyle="mapbox://styles/mapbox/dark-v9"
