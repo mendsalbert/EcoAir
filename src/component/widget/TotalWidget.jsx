@@ -7,10 +7,11 @@ import totalEarn4 from "/public/static/images/icons/total-earn-4.svg";
 import totalEarn5 from "/public/static/images/icons/total-earn-5.svg";
 import memberImg from "/public/static/images/avatar/members-2.png";
 import TotalWidgetCard from "./TotalWidgetCard";
-import Spinner from "../../component/spinner/index";
+import Spinner from "../spinner";
 function TotalWidget() {
   const [locations, setLocations] = useState([]);
   const [parameters, setParameters] = useState([]);
+
   useEffect(() => {
     async function fetchLocations() {
       try {
