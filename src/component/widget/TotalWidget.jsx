@@ -10,6 +10,7 @@ import TotalWidgetCard from "./TotalWidgetCard";
 
 function TotalWidget() {
   const [locations, setLocations] = useState([]);
+  const [parameters, setParameters] = useState([]);
   useEffect(() => {
     async function fetchLocations() {
       try {
@@ -28,7 +29,25 @@ function TotalWidget() {
       }
     }
 
+    async function fetchParameters() {
+      try {
+        const response = await fetch(
+          "http://localhost:8001/api/v1/parameters/get-parameters"
+        );
+        if (!response.ok) {
+          throw new Error(`Error: ${response.statusText}`);
+        }
+        const data = await response.json();
+        setParameters(data);
+      } catch (error) {
+        // setError(error.message);
+      } finally {
+        console.log("finally");
+      }
+    }
+
     fetchLocations();
+    fetchParameters();
   }, []);
 
   return (
