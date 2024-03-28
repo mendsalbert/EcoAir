@@ -51,19 +51,26 @@ function TotalWidget() {
     async function fetchCountries() {
       try {
         const response = await fetch(
-          "  http://localhost:8001/api/v1/countries/get-countries"
+          "http://localhost:8001/api/v1/countries/get-countries"
         );
         if (!response.ok) {
           throw new Error(`Error: ${response.statusText}`);
         }
         const data = await response.json();
-        setCountries(data);
+
+        const uniqueCountries = Array.from(
+          new Map(data.map((country) => [country["name"], country])).values()
+        );
+
+        setCountries(uniqueCountries);
       } catch (error) {
         // setError(error.message);
+        console.error(error.message);
       } finally {
         console.log("finally");
       }
     }
+
     fetchLocations();
     fetchParameters();
     fetchCountries();
@@ -96,7 +103,7 @@ function TotalWidget() {
           totalEarnImg={totalEarn3}
           memberImg={memberImg}
           title="Coutries"
-          amount="117"
+          amount={countries.length > 0 ? countries.length : <Spinner />}
           groth=""
           id="totalEarn"
           isPrev={false}
