@@ -1,0 +1,1124 @@
+<body marginwidth="0" marginheight="0" data-new-gr-c-s-check-loaded="14.1164.0" data-gr-ext-installed="">
+
+
+
+
+
+<p align="center">
+    <a href="gradeprint.php" target="_blank" class="style2" onclick="Popup=window.open('gradeprint.php','Popup','toolbar=no,location=no,status=no,menubar=yes,scrollbars=yes,resizable=no, width=780,height=2500,left=0,top=0' ); return false;">
+        <strong>Print preview</strong>
+    </a>
+</p>
+
+<p></p>
+
+<p align="center">
+    <font color="#FF0000" size="-2" style="font-family:Verdana, Geneva, sans-serif">
+        <strong>NOTE:</strong> <br>
+        The Status for each Course is displayed below; <br>
+        <strong>Inactive:</strong> Pending to be assingned to Lecturer <br>
+        <strong>With Lect:</strong> Assessment Sheet with Lecturer<br>
+        <strong>With Dept:</strong> Assessment Sheet with Department<br>
+        <strong>With Facty:</strong> Assessment Sheet with Faculty, pending approval
+    </font>
+</p>
+
+
+<p>
+
+</p>
+<table width="740" align="center" style="border:solid; border-color:#000000; border-width:thin ">
+    <tbody><tr>
+        <td colspan="5">
+            <div align="left">
+                <span class="style1">
+                    <em><strong>2017/2018 Academic Year, First Semester</strong></em>
+                </span>
+            </div>
+        </td>
+    </tr>
+    <tr bgcolor="#ACACAC">
+        <td width="55"><div align="left"><span class="style8">CODE</span></div></td>
+        <td width="565"><div align="left"><span class="style8">TITLE</span></div></td>
+        <td width="80"><span class="style8"></span></td>
+    
+        <td width="40"><div align="left"><span class="style8">CR</span></div></td>
+        <td width="40"><div align="left"><span class="style8">GD</span></div></td>
+        <td width="40"><div align="left"><span class="style8">GP</span></div></td>
+    </tr>
+    
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">ASP103A</span></div></td>
+            <td><div align="left"><span class="style8">POPULATION DEVELOPMENT AND AFRICAN ENVIRONMENT</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    B            </span></td>
+      
+            <td><span class="style8">
+	    9.0            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">CMS107</span></div></td>
+            <td><div align="left"><span class="style8">COMMUNICATIVE SKILLS</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    B            </span></td>
+      
+            <td><span class="style8">
+	    9.0            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">CSC101</span></div></td>
+            <td><div align="left"><span class="style8">INTRODUCTION TO COMPUTING</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    A            </span></td>
+      
+            <td><span class="style8">
+	    12.0            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">CSC107</span></div></td>
+            <td><div align="left"><span class="style8">SOFTWARE SUITE</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    A            </span></td>
+      
+            <td><span class="style8">
+	    12.0            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">ILT101</span></div></td>
+            <td><div align="left"><span class="style8">INFORMATION LITERACY</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">1</span></td>
+            <td><span class="style8">
+	    A            </span></td>
+      
+            <td><span class="style8">
+	    4.0            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">MAT101</span></div></td>
+            <td><div align="left"><span class="style8">ALGEBRA AND TRIGONOMETRY</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    B+            </span></td>
+      
+            <td><span class="style8">
+10.5</span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">PHY101</span></div></td>
+            <td><div align="left"><span class="style8">GENERAL PHYSICS I (THEORY)</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">2</span></td>
+            <td><span class="style8">
+	    C+            </span></td>
+      
+            <td><span class="style8">
+	    5.0            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">PHY103</span></div></td>
+            <td><div align="left"><span class="style8">GENERAL PHYSICS I (PRACTICAL)</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">1</span></td>
+            <td><span class="style8">
+	    C+            </span></td>
+      
+            <td><span class="style8">
+	    2.5            </span></td>
+        </tr>
+            <tr bgcolor="#ACACAC">
+            <td colspan="2" bgcolor="#ACACAC">
+                <div align="left">
+                    <span class="style8">GPA= 3.3684 , CGPA=3.3684</span>
+                </div>
+            </td>
+            <td><div align="left"></div></td>
+            <td><div align="left"><span class="style1"></span><span class="style8">19</span></div></td>
+            <td><span class="style1"></span></td>
+            <td><div align="left"><span class="style8">64</span></div></td>
+        </tr>
+</tbody></table>
+<table width="740" align="center" style="border:solid; border-color:#000000; border-width:thin ">
+    <tbody><tr>
+        <td colspan="5">
+            <div align="left">
+                <span class="style1">
+                    <em><strong>2017/2018 Academic Year, Second Semester</strong></em>
+                </span>
+            </div>
+        </td>
+    </tr>
+    <tr bgcolor="#ACACAC">
+        <td width="55"><div align="left"><span class="style8">CODE</span></div></td>
+        <td width="565"><div align="left"><span class="style8">TITLE</span></div></td>
+        <td width="80"><span class="style8"></span></td>
+    
+        <td width="40"><div align="left"><span class="style8">CR</span></div></td>
+        <td width="40"><div align="left"><span class="style8">GD</span></div></td>
+        <td width="40"><div align="left"><span class="style8">GP</span></div></td>
+    </tr>
+    
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">CMS108</span></div></td>
+            <td><div align="left"><span class="style8">COMMUNICATIVE SKILLS</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    B</span></td>
+      
+            <td><span class="style8">
+	    9.0            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">CSC102</span></div></td>
+            <td><div align="left"><span class="style8">PROGRAMMING TECHNIQUE</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    B+            </span></td>
+      
+            <td><span class="style8">
+	    10.5            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">CSC110</span></div></td>
+            <td><div align="left"><span class="style8">COMPUTER HARDWARE</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    A            </span></td>
+      
+            <td><span class="style8">
+	    12.0            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">ITS101</span></div></td>
+            <td><div align="left"><span class="style8">INFORMATION TECHNOLOGY SKILLS</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">1</span></td>
+            <td><span class="style8">
+	    A            </span></td>
+      
+            <td><span class="style8">
+	    4.0            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">LED120</span></div></td>
+            <td><div align="left"><span class="style8">EARLY CHILDHOOD CARE AND DEVELOPMENT</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    A            </span></td>
+      
+            <td><span class="style8">
+	    12.0            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">MAT102</span></div></td>
+            <td><div align="left"><span class="style8">ANALYTIC GEOMETRY AND CALCULUS</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    A            </span></td>
+      
+            <td><span class="style8">
+12.0</span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">PHY102</span></div></td>
+            <td><div align="left"><span class="style8">GENERAL PHYSICS II (THEORY)</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">2</span></td>
+            <td><span class="style8">
+	    B+            </span></td>
+      
+            <td><span class="style8">
+	    7.0            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">PHY104</span></div></td>
+            <td><div align="left"><span class="style8">GENERAL PHYSICS II (PRACTICAL)</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">1</span></td>
+            <td><span class="style8">
+	    C+            </span></td>
+      
+            <td><span class="style8">
+	    2.5            </span></td>
+        </tr>
+            <tr bgcolor="#ACACAC">
+            <td colspan="2" bgcolor="#ACACAC">
+                <div align="left">
+                    <span class="style8">GPA= 3.6315 , CGPA=3.4999</span>
+                </div>
+            </td>
+            <td><div align="left"></div></td>
+            <td><div align="left"><span class="style1"></span><span class="style8">19</span></div></td>
+            <td><span class="style1"></span></td>
+            <td><div align="left"><span class="style8">69</span></div></td>
+        </tr>
+</tbody></table>
+<div align="center"> <br>
+<table width="740" align="center" style="border:solid; border-color:#000000; border-width:thin ">
+    <tbody><tr>
+        <td colspan="5">
+            <div align="left">
+                <span class="style1">
+                    <em><strong>2018/2019 Academic Year, First Semester</strong></em>
+                </span>
+            </div>
+        </td>
+    </tr>
+    <tr bgcolor="#ACACAC">
+        <td width="55"><div align="left"><span class="style8">CODE</span></div></td>
+        <td width="565"><div align="left"><span class="style8">TITLE</span></div></td>
+        <td width="80"><span class="style8"></span></td>
+    
+        <td width="40"><div align="left"><span class="style8">CR</span></div></td>
+        <td width="40"><div align="left"><span class="style8">GD</span></div></td>
+        <td width="40"><div align="left"><span class="style8">GP</span></div></td>
+    </tr>
+    
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">CSC203</span></div></td>
+            <td><div align="left"><span class="style8">PROGRAMMING AND PROBLEM ANALYSIS 1</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    B            </span></td>
+      
+            <td><span class="style8">
+	    9.0            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">CSC211</span></div></td>
+            <td><div align="left"><span class="style8">COMPUTER ARCHITECTURE</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    A</span></td>
+      
+            <td><span class="style8">
+12.0</span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">CSC213</span></div></td>
+            <td><div align="left"><span class="style8">DATABASE MANAGEMENT I</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    B            </span></td>
+      
+            <td><span class="style8">
+	    9.0            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">MAT201</span></div></td>
+            <td><div align="left"><span class="style8">INTRODUCTION TO ABSTRACT ALGEBRA</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">A</span></td>
+      
+            <td><span class="style8">
+12.0</span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">MAT203</span></div></td>
+            <td><div align="left"><span class="style8">FURTHER CALCULUS</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    A            </span></td>
+      
+            <td><span class="style8">
+	    12.0            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">PHY201</span></div></td>
+            <td><div align="left"><span class="style8">NEWTONIAN MECHANICS</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">2</span></td>
+            <td><span class="style8">
+	    B+            </span></td>
+      
+            <td><span class="style8">
+	    7.0            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">PHY205</span></div></td>
+            <td><div align="left"><span class="style8">NEWTONIAN MECHANICS (PRACTICAL)</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">1</span></td>
+            <td><span class="style8">
+	    B+            </span></td>
+      
+            <td><span class="style8">
+	    3.5            </span></td>
+        </tr>
+            <tr bgcolor="#ACACAC">
+            <td colspan="2" bgcolor="#ACACAC">
+                <div align="left">
+                    <span class="style8">GPA= 3.5833 , CGPA=3.5277</span>
+                </div>
+            </td>
+            <td><div align="left"></div></td>
+            <td><div align="left"><span class="style1"></span><span class="style8">18</span></div></td>
+            <td><span class="style1"></span></td>
+            <td><div align="left"><span class="style8">64.5</span></div></td>
+        </tr>
+</tbody></table>
+<div align="center"> <br>
+<table width="740" align="center" style="border:solid; border-color:#000000; border-width:thin ">
+    <tbody><tr>
+        <td colspan="5">
+            <div align="left">
+                <span class="style1">
+                    <em><strong>2018/2019 Academic Year, Second Semester</strong></em>
+                </span>
+            </div>
+        </td>
+    </tr>
+    <tr bgcolor="#ACACAC">
+        <td width="55"><div align="left"><span class="style8">CODE</span></div></td>
+        <td width="565"><div align="left"><span class="style8">TITLE</span></div></td>
+        <td width="80"><span class="style8"></span></td>
+    
+        <td width="40"><div align="left"><span class="style8">CR</span></div></td>
+        <td width="40"><div align="left"><span class="style8">GD</span></div></td>
+        <td width="40"><div align="left"><span class="style8">GP</span></div></td>
+    </tr>
+    
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">CSC212</span></div></td>
+            <td><div align="left"><span class="style8">ALGORITHMS</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    A            </span></td>
+      
+            <td><span class="style8">
+	    12.0            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">CSC214</span></div></td>
+            <td><div align="left"><span class="style8">OPERATING SYSTEMS</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    A            </span></td>
+      
+            <td><span class="style8">
+	    12.0            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">CSC216</span></div></td>
+            <td><div align="left"><span class="style8">DATABASE MANAGEMENT II</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    A</span></td>
+      
+            <td><span class="style8">
+	    12.0            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">MAT202</span></div></td>
+            <td><div align="left"><span class="style8">VECTOR ALGEBRA AND DIFFERENTIAL EQUATIONS</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    B+</span></td>
+      
+            <td><span class="style8">
+	    10.5            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">PHL205</span></div></td>
+            <td><div align="left"><span class="style8">CRITICAL THINKING AND PRACTICAL REASONING</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">2</span></td>
+            <td><span class="style8">
+	    C+            </span></td>
+      
+            <td><span class="style8">
+	    5.0            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">PHY204</span></div></td>
+            <td><div align="left"><span class="style8">ELECTRONICS I</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">2</span></td>
+            <td><span class="style8">
+	    C+            </span></td>
+      
+            <td><span class="style8">
+	    5.0            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">PHY208</span></div></td>
+            <td><div align="left"><span class="style8">ELECTRONICS I  (PRACTICAL)</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">1</span></td>
+            <td><span class="style8">
+	    B            </span></td>
+      
+            <td><span class="style8">
+	    3.0            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">STA202</span></div></td>
+            <td><div align="left"><span class="style8">FURTHER STATISTICS</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    A</span></td>
+      
+            <td><span class="style8">
+	    12.0            </span></td>
+        </tr>
+            <tr bgcolor="#ACACAC">
+            <td colspan="2" bgcolor="#ACACAC">
+                <div align="left">
+                    <span class="style8">GPA= 3.050 , CGPA=3.4083</span>
+                </div>
+            </td>
+            <td><div align="left"></div></td>
+            <td><div align="left"><span class="style1"></span><span class="style8">20</span></div></td>
+            <td><span class="style1"></span></td>
+            <td><div align="left"><span class="style8">61.0</span></div></td>
+        </tr>
+</tbody></table>
+<div align="center"> <br>
+<table width="740" align="center" style="border:solid; border-color:#000000; border-width:thin ">
+    <tbody><tr>
+        <td colspan="5">
+            <div align="left">
+                <span class="style1">
+                    <em><strong>2019/2020 Academic Year, First Semester</strong></em>
+                </span>
+            </div>
+        </td>
+    </tr>
+    <tr bgcolor="#ACACAC">
+        <td width="55"><div align="left"><span class="style8">CODE</span></div></td>
+        <td width="565"><div align="left"><span class="style8">TITLE</span></div></td>
+        <td width="80"><span class="style8"></span></td>
+    
+        <td width="40"><div align="left"><span class="style8">CR</span></div></td>
+        <td width="40"><div align="left"><span class="style8">GD</span></div></td>
+        <td width="40"><div align="left"><span class="style8">GP</span></div></td>
+    </tr>
+    
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">CSC311</span></div></td>
+            <td><div align="left"><span class="style8">COMPUTER SECURITY</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    B+            </span></td>
+      
+            <td><span class="style8">
+	    10.5            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">CSC315</span></div></td>
+            <td><div align="left"><span class="style8">DISCRETE MATHEMATICS</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    A</span></td>
+      
+            <td><span class="style8">
+	    12.0            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">CSC317</span></div></td>
+            <td><div align="left"><span class="style8">SOFTWARE ENGINEERING</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    B+            </span></td>
+      
+            <td><span class="style8">
+	    10.5            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">CSC319</span></div></td>
+            <td><div align="left"><span class="style8">DATA STRUCTURES</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    A            </span></td>
+      
+            <td><span class="style8">
+	    12.0            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">CSC321</span></div></td>
+            <td><div align="left"><span class="style8">EMBEDDED SYSTEMS</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">0</span></td>
+            <td><span class="style8">
+	    AUDIT            </span></td>
+      
+            <td><span class="style8">
+	    0            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">MAT301</span></div></td>
+            <td><div align="left"><span class="style8">ADVANCED CALCULUS 1</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    A</span></td>
+      
+            <td><span class="style8">
+	    12.0            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">MAT303</span></div></td>
+            <td><div align="left"><span class="style8">INTRODUCTORY ANALYSIS</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    A</span></td>
+      
+            <td><span class="style8">
+	   12.0           </span></td>
+        </tr>
+            <tr bgcolor="#ACACAC">
+            <td colspan="2" bgcolor="#ACACAC">
+                <div align="left">
+                    <span class="style8">GPA= 3.8333, CGPA=3.4933</span>
+                </div>
+            </td>
+            <td><div align="left"></div></td>
+            <td><div align="left"><span class="style1"></span><span class="style8">18</span></div></td>
+            <td><span class="style1"></span></td>
+            <td><div align="left"><span class="style8">69</span></div></td>
+        </tr>
+</tbody></table>
+<div align="center"> <br>
+<table width="740" align="center" style="border:solid; border-color:#000000; border-width:thin ">
+    <tbody><tr>
+        <td colspan="5">
+            <div align="left">
+                <span class="style1">
+                    <em><strong>2019/2020 Academic Year, Second Semester</strong></em>
+                </span>
+            </div>
+        </td>
+    </tr>
+    <tr bgcolor="#ACACAC">
+        <td width="55"><div align="left"><span class="style8">CODE</span></div></td>
+        <td width="565"><div align="left"><span class="style8">TITLE</span></div></td>
+        <td width="80"><span class="style8"></span></td>
+    
+        <td width="40"><div align="left"><span class="style8">CR</span></div></td>
+        <td width="40"><div align="left"><span class="style8">GD</span></div></td>
+        <td width="40"><div align="left"><span class="style8">GP</span></div></td>
+    </tr>
+    
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">CSC302</span></div></td>
+            <td><div align="left"><span class="style8">PROG. &amp; PROBLEM ANALYSIS II (JAVA)</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    A            </span></td>
+      
+            <td><span class="style8">
+	    12.0            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">CSC312</span></div></td>
+            <td><div align="left"><span class="style8">HUMAN COMPUTER INTERFACE</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    B            </span></td>
+      
+            <td><span class="style8">
+	    9.0            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">CSC314</span></div></td>
+            <td><div align="left"><span class="style8">NETWORK COMPUTING I</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    B+            </span></td>
+      
+            <td><span class="style8">
+	    10.5            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">CSC316</span></div></td>
+            <td><div align="left"><span class="style8">WEB TECHNOLOGIES</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    A            </span></td>
+      
+            <td><span class="style8">
+	    12.0            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">CSC399</span></div></td>
+            <td><div align="left"><span class="style8">RESEARCH METHODS</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    B+            </span></td>
+      
+            <td><span class="style8">
+	    10.5            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">ENT302</span></div></td>
+            <td><div align="left"><span class="style8">INTRODUCTION TO ENTREPRENEURSHIP</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">2</span></td>
+            <td><span class="style8">
+	    B            </span></td>
+      
+            <td><span class="style8">
+	    6.0            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">MAT302</span></div></td>
+            <td><div align="left"><span class="style8">ADVANCED CALCULUS II</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    A</span></td>
+      
+            <td><span class="style8">
+12.0</span></td>
+        </tr>
+            <tr bgcolor="#ACACAC">
+            <td colspan="2" bgcolor="#ACACAC">
+                <div align="left">
+                    <span class="style8">GPA= 3.6 , CGPA=3.5110</span>
+                </div>
+            </td>
+            <td><div align="left"></div></td>
+            <td><div align="left"><span class="style1"></span><span class="style8">20</span></div></td>
+            <td><span class="style1"></span></td>
+            <td><div align="left"><span class="style8">72</span></div></td>
+        </tr>
+</tbody></table>
+<div align="center"> <br>
+<table width="740" align="center" style="border:solid; border-color:#000000; border-width:thin ">
+    <tbody><tr>
+        <td colspan="5">
+            <div align="left">
+                <span class="style1">
+                    <em><strong>2020/2021 Academic Year, First Semester</strong></em>
+                </span>
+            </div>
+        </td>
+    </tr>
+    <tr bgcolor="#ACACAC">
+        <td width="55"><div align="left"><span class="style8">CODE</span></div></td>
+        <td width="565"><div align="left"><span class="style8">TITLE</span></div></td>
+        <td width="80"><span class="style8"></span></td>
+    
+        <td width="40"><div align="left"><span class="style8">CR</span></div></td>
+        <td width="40"><div align="left"><span class="style8">GD</span></div></td>
+        <td width="40"><div align="left"><span class="style8">GP</span></div></td>
+    </tr>
+    
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">CSC401</span></div></td>
+            <td><div align="left"><span class="style8">INTRODUCTION TO COMPILERS</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    B+            </span></td>
+      
+            <td><span class="style8">
+	    10.5            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">CSC405</span></div></td>
+            <td><div align="left"><span class="style8">ADVANCED OPERATING SYSTEMS</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    C+            </span></td>
+      
+            <td><span class="style8">
+	    7.5            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">CSC411</span></div></td>
+            <td><div align="left"><span class="style8">INTRODUCTION TO ARTIFICIAL INTELLIGENCE</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    C+            </span></td>
+      
+            <td><span class="style8">
+	    7.5            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">CSC413</span></div></td>
+            <td><div align="left"><span class="style8">COMPUTER GRAPHICS</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    B            </span></td>
+      
+            <td><span class="style8">
+	    9.0            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">CSC415</span></div></td>
+            <td><div align="left"><span class="style8">NETWORK COMPUTING II</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    A            </span></td>
+      
+            <td><span class="style8">
+	    12.0            </span></td>
+        </tr>
+            <tr bgcolor="#ACACAC">
+            <td colspan="2" bgcolor="#ACACAC">
+                <div align="left">
+                    <span class="style8">GPA= 3.1 , CGPA=3.4523</span>
+                </div>
+            </td>
+            <td><div align="left"></div></td>
+            <td><div align="left"><span class="style1"></span><span class="style8">15</span></div></td>
+            <td><span class="style1"></span></td>
+            <td><div align="left"><span class="style8">46.5</span></div></td>
+        </tr>
+</tbody></table>
+<div align="center"> <br>
+<table width="740" align="center" style="border:solid; border-color:#000000; border-width:thin ">
+    <tbody><tr>
+        <td colspan="5">
+            <div align="left">
+                <span class="style1">
+                    <em><strong>2020/2021 Academic Year, Second Semester</strong></em>
+                </span>
+            </div>
+        </td>
+    </tr>
+    <tr bgcolor="#ACACAC">
+        <td width="55"><div align="left"><span class="style8">CODE</span></div></td>
+        <td width="565"><div align="left"><span class="style8">TITLE</span></div></td>
+        <td width="80"><span class="style8"></span></td>
+    
+        <td width="40"><div align="left"><span class="style8">CR</span></div></td>
+        <td width="40"><div align="left"><span class="style8">GD</span></div></td>
+        <td width="40"><div align="left"><span class="style8">GP</span></div></td>
+    </tr>
+    
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">CSC402</span></div></td>
+            <td><div align="left"><span class="style8">NUMERICAL ANALYSIS</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    A            </span></td>
+      
+            <td><span class="style8">
+	    12.0            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">CSC406</span></div></td>
+            <td><div align="left"><span class="style8">SYSTEMS ADMINISTRATION</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    D+            </span></td>
+      
+            <td><span class="style8">
+	    4.5            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">CSC408</span></div></td>
+            <td><div align="left"><span class="style8">OPERATIONS RESEARCH</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    C+            </span></td>
+      
+            <td><span class="style8">
+	    7.5            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">CSC412</span></div></td>
+            <td><div align="left"><span class="style8">CRYPTOGRAPHY AND NETWORK SECURITY</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    A            </span></td>
+      
+            <td><span class="style8">
+	    12.0            </span></td>
+        </tr>
+            <tr bgcolor="#EEEEEE">
+            <td><div align="left"><span class="style8">CSC499</span></div></td>
+            <td><div align="left"><span class="style8">PROJECT WORK</span> &nbsp;&nbsp;&nbsp;<font size="-1"></font></div>
+            </td>
+    	    
+            <td><span class="style1">
+                        </span></td>
+      
+            <td><span class="style8">3</span></td>
+            <td><span class="style8">
+	    A            </span></td>
+      
+            <td><span class="style8">
+	    12.0            </span></td>
+        </tr>
+            <tr bgcolor="#ACACAC">
+            <td colspan="2" bgcolor="#ACACAC">
+                <div align="left">
+                    <span class="style8">GPA= 3.2 , CGPA=3.4208</span>
+                </div>
+            </td>
+            <td><div align="left"></div></td>
+            <td><div align="left"><span class="style1"></span><span class="style8">15</span></div></td>
+            <td><span class="style1"></span></td>
+            <td><div align="left"><span class="style8">48</span></div></td>
+        </tr>
+</tbody></table>
+<div align="center"> <br>
+
+
+    <a href="gradeprint.php" target="_blank" class="style2" onclick="Popup=window.open('gradeprint.php','Popup','toolbar=no,location=no,status=no,menubar=yes,scrollbars=yes,resizable=no, width=780,height=2500,left=0,top=0' ); return false;"><strong>Print preview</strong></a>
+</div>
+
+
+
+</div></div></div></div></div></div></div></body>
