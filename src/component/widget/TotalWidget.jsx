@@ -12,6 +12,7 @@ function TotalWidget() {
   const [locations, setLocations] = useState([]);
   const [parameters, setParameters] = useState([]);
   const [countries, setCountries] = useState([]);
+  const [manufacturers, setManufacturers] = useState([]);
 
   useEffect(() => {
     async function fetchLocations() {
@@ -30,7 +31,6 @@ function TotalWidget() {
         console.log("finally");
       }
     }
-
     async function fetchParameters() {
       try {
         const response = await fetch(
@@ -47,7 +47,6 @@ function TotalWidget() {
         console.log("finally");
       }
     }
-
     async function fetchCountries() {
       try {
         const response = await fetch(
@@ -70,10 +69,26 @@ function TotalWidget() {
         console.log("finally");
       }
     }
-
+    async function fetchManufacturers() {
+      try {
+        const response = await fetch(
+          "http://localhost:8001/api/v1/manufacturers/get-manufacturers"
+        );
+        if (!response.ok) {
+          throw new Error(`Error: ${response.statusText}`);
+        }
+        const data = await response.json();
+        setManufacturers(data);
+      } catch (error) {
+        // setError(error.message);
+      } finally {
+        console.log("finally");
+      }
+    }
     fetchLocations();
     fetchParameters();
     fetchCountries();
+    fetchManufacturers();
   }, []);
 
   return (
@@ -113,8 +128,8 @@ function TotalWidget() {
           totalEarnImg={totalEarn4}
           memberImg={memberImg}
           title="Manufacturers"
-          amount="15 µg/m³"
-          groth="Ghana"
+          amount={manufacturers.length > 0 ? manufacturers.length : <Spinner />}
+          groth="+0.2%"
           id="totalSpending"
           isPrev={true}
           graphColor="#22C55E"
