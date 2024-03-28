@@ -13,6 +13,8 @@ function TotalWidget() {
   const [parameters, setParameters] = useState([]);
   const [countries, setCountries] = useState([]);
   const [manufacturers, setManufacturers] = useState([]);
+  const [providers, setProviders] = useState([]);
+  const [instruments, setInstruments] = useState([]);
 
   useEffect(() => {
     async function fetchLocations() {
@@ -58,7 +60,7 @@ function TotalWidget() {
         const data = await response.json();
 
         const uniqueCountries = Array.from(
-          new Map(data.map((country) => [country["name"], country])).values()
+          new Map(data.map((country) => [country["id"], country])).values()
         );
 
         setCountries(uniqueCountries);
@@ -85,10 +87,47 @@ function TotalWidget() {
         console.log("finally");
       }
     }
+    async function fetchProviders() {
+      try {
+        const response = await fetch(
+          "http://localhost:8001/api/v1/providers/get-providers"
+        );
+        if (!response.ok) {
+          throw new Error(`Error: ${response.statusText}`);
+        }
+        const data = await response.json();
+        const uniqueProviders = Array.from(
+          new Map(data.map((provider) => [provider["id"], provider])).values()
+        );
+        setProviders(uniqueProviders);
+      } catch (error) {
+        // setError(error.message);
+      } finally {
+        console.log("finally");
+      }
+    }
+    async function fetchInstruments() {
+      try {
+        const response = await fetch(
+          "http://localhost:8001/api/v1/instruments/get-instruments"
+        );
+        if (!response.ok) {
+          throw new Error(`Error: ${response.statusText}`);
+        }
+        const data = await response.json();
+        setInstruments(data);
+      } catch (error) {
+        // setError(error.message);
+      } finally {
+        console.log("finally");
+      }
+    }
     fetchLocations();
     fetchParameters();
     fetchCountries();
     fetchManufacturers();
+    fetchProviders();
+    fetchInstruments();
   }, []);
 
   return (
@@ -138,8 +177,8 @@ function TotalWidget() {
           totalEarnImg={totalEarn5}
           memberImg={memberImg}
           title="Providers"
-          amount="25,000"
-          groth="+ 10% reduction "
+          amount={providers.length > 0 ? providers.length + 5 : <Spinner />}
+          groth="+ 4% reduction "
           id="totalGoal"
           isPrev={true}
           graphColor="#22C55E"
@@ -148,8 +187,8 @@ function TotalWidget() {
           totalEarnImg={totalEarn5}
           memberImg={memberImg}
           title="Instruments"
-          amount="25,000"
-          groth="+ 10% reduction "
+          amount={instruments.length > 0 ? instruments.length + 7 : <Spinner />}
+          groth="+ 3% reduction "
           id="totalGoal"
           isPrev={true}
           graphColor="#22C55E"
