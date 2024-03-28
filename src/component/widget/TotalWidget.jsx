@@ -104,7 +104,7 @@ function TotalWidget() {
           memberImg={memberImg}
           title="Coutries"
           amount={countries.length > 0 ? countries.length : <Spinner />}
-          groth=""
+          groth="Ghana, Poland, xNorway..."
           id="totalEarn"
           isPrev={false}
           graphColor="#22C55E"

@@ -4,7 +4,7 @@ import LineChart from "../chart/LineChart";
 import { useEffect } from "react";
 import { useRef } from "react";
 import Image from "next/image";
-
+I;
 const createGradient = (ctx) => {
   const gradient = ctx.createLinearGradient(0, 0, 0, 450);
   gradient.addColorStop(0, "rgba(34, 197, 94,0.41)");
@@ -151,9 +151,9 @@ function TotalWidgetCard({
             </span>
           </div>
         </div>
-        <div className="w-[106px] h-[68px]">
+        {/* <div className="w-[106px] h-[68px]">
           <LineChart option={options} dataSet={data} refer={chartRef} />
-        </div>
+        </div> */}
       </div>
     </div>
   );
