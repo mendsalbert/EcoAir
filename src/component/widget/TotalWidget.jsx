@@ -11,6 +11,7 @@ import Spinner from "../spinner";
 function TotalWidget() {
   const [locations, setLocations] = useState([]);
   const [parameters, setParameters] = useState([]);
+  const [countries, setCountries] = useState([]);
 
   useEffect(() => {
     async function fetchLocations() {
@@ -47,8 +48,25 @@ function TotalWidget() {
       }
     }
 
+    async function fetchCountries() {
+      try {
+        const response = await fetch(
+          "  http://localhost:8001/api/v1/countries/get-countries"
+        );
+        if (!response.ok) {
+          throw new Error(`Error: ${response.statusText}`);
+        }
+        const data = await response.json();
+        setCountries(data);
+      } catch (error) {
+        // setError(error.message);
+      } finally {
+        console.log("finally");
+      }
+    }
     fetchLocations();
     fetchParameters();
+    fetchCountries();
   }, []);
 
   return (
