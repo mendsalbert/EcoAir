@@ -150,6 +150,35 @@ function SidebarV2() {
                       </span>
                     </Link>
                   </li>
+                  <li className="item px-[43px] py-[11px]">
+                    <Link href="/users">
+                      <span className="item-ico">
+                        <svg
+                          width="14"
+                          height="18"
+                          viewBox="0 0 14 18"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <ellipse
+                            cx="7"
+                            cy="14"
+                            rx="7"
+                            ry="4"
+                            className="path-1"
+                            fill="#1A202C"
+                          />
+                          <circle
+                            cx="7"
+                            cy="4"
+                            r="4"
+                            fill="#22C55E"
+                            className="path-2"
+                          />
+                        </svg>
+                      </span>
+                    </Link>
+                  </li>
                 </ul>
               </div>
               <div className="item-wrapper mb-5">
